@@ -15,6 +15,7 @@
 		01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC624661386004980E9 /* LaunchScreen.storyboard */; };
 		01D53BD324661386004980E9 /* MarvelArenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BD224661386004980E9 /* MarvelArenaTests.swift */; };
 		01D53BDE24661386004980E9 /* MarvelArenaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BDD24661386004980E9 /* MarvelArenaUITests.swift */; };
+		01D53BEE24661F3F004980E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BF024661F3F004980E9 /* Localizable.strings */; };
 		7D1533FA2C294262A9B8B00A /* Pods_MarvelArena_MarvelArenaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE29A00B2D5F818ADCD3E2F /* Pods_MarvelArena_MarvelArenaUITests.framework */; };
 		96E2B83D8811E8667E6C4A51 /* Pods_MarvelArenaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E0FAF04D7AC5B8626F68B5 /* Pods_MarvelArenaTests.framework */; };
 		BFF91496BAA683F86838584C /* Pods_MarvelArena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E9424CC3091E2B373E7373 /* Pods_MarvelArena.framework */; };
@@ -52,6 +53,7 @@
 		01D53BD924661386004980E9 /* MarvelArenaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelArenaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D53BDD24661386004980E9 /* MarvelArenaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelArenaUITests.swift; sourceTree = "<group>"; };
 		01D53BDF24661386004980E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D53BEF24661F3F004980E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		193587B1ED99DC6ED44A9008 /* Pods-MarvelArena-MarvelArenaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArena-MarvelArenaUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelArena-MarvelArenaUITests/Pods-MarvelArena-MarvelArenaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2BE29A00B2D5F818ADCD3E2F /* Pods_MarvelArena_MarvelArenaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelArena_MarvelArenaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3323E85CCAEF9E84469127FB /* Pods-MarvelArena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArena.debug.xcconfig"; path = "Target Support Files/Pods-MarvelArena/Pods-MarvelArena.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				01D53BC424661386004980E9 /* Assets.xcassets */,
 				01D53BC624661386004980E9 /* LaunchScreen.storyboard */,
 				01D53BC924661386004980E9 /* Info.plist */,
+				01D53BF024661F3F004980E9 /* Localizable.strings */,
 			);
 			path = MarvelArena;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */,
+				01D53BEE24661F3F004980E9 /* Localizable.strings in Resources */,
 				01D53BC524661386004980E9 /* Assets.xcassets in Resources */,
 				01D53BC324661385004980E9 /* Main.storyboard in Resources */,
 			);
@@ -442,6 +446,14 @@
 				01D53BC724661386004980E9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		01D53BF024661F3F004980E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D53BEF24661F3F004980E9 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
