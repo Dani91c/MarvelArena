@@ -1,0 +1,6 @@
+framework module Pods_MarvelArena {
+  umbrella header "Pods-MarvelArena-umbrella.h"
+
+  export *
+  module * { export * }
+}
