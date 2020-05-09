@@ -20,4 +20,16 @@ class HomePresenter {
 
 // MARK: HomePresenter Protocol
 extension HomePresenter: HomePresenterProtocol {
+    
+    func buttonClicked(position: Int) {
+        switch position {
+        case 0:
+            router.showSearchCharacterViewController()
+        case 1:
+            router.showArenaViewController()
+        default:
+            router.showRankingViewController()
+        }
+        
+    }
 }

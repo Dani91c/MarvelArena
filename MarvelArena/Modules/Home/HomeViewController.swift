@@ -13,13 +13,14 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var firstTitleLabel: UILabel!
     @IBOutlet weak var secondTitleLabel: UILabel!
-    @IBOutlet weak var superheroButton: UIButton!
+    @IBOutlet weak var searchCharacterButton: UIButton!
     @IBOutlet weak var arenaButton: UIButton!
     @IBOutlet weak var rankingButton: UIButton!
     
     var presenter: HomePresenterProtocol?
 
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {
+        presenter?.buttonClicked(position: sender.tag)
     }
     
     override func viewDidLoad() {
@@ -35,7 +36,7 @@ class HomeViewController: UIViewController {
     private func setTextInLanguage() {
         firstTitleLabel.text = NSLocalizedString("home.fistTitleLabel", comment: "").uppercased()
         secondTitleLabel.text = NSLocalizedString("home.secondTitleLabel", comment: "").uppercased()
-        superheroButton.setTitle(NSLocalizedString("home.searchSuperheroButton", comment: ""), for: .normal)
+        searchCharacterButton.setTitle(NSLocalizedString("home.searchCharacterButton", comment: ""), for: .normal)
         arenaButton.setTitle(NSLocalizedString("home.arenaButton", comment: ""), for: .normal)
         rankingButton.setTitle(NSLocalizedString("home.rankingButton", comment: ""), for: .normal)
     }

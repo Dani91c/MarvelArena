@@ -28,4 +28,16 @@ class HomeRouter {
 
 // MARK: HomeRouter Protocol
 extension HomeRouter: HomeRouterProtocol {
+    
+    func showSearchCharacterViewController() {
+        mainRouter.showSearchCharacterViewController()
+    }
+    
+    func showArenaViewController() {
+        mainRouter.showArenaViewController()
+    }
+    
+    func showRankingViewController() {
+        mainRouter.showRankingViewController()
+    }
 }

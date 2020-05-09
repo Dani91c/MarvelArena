@@ -9,7 +9,8 @@
 //MARK: Home Module
 "home.fistTitleLabel" = "Marvel";
 "home.secondTitleLabel" = "Arena";
-"home.searchSuperheroButton" = "Search Superhero";
+"home.searchCharacterButton" = "Search character";
 "home.arenaButton" = "Arena";
 "home.rankingButton" = "Ranking";
 
+//MARK: Search Character Module
