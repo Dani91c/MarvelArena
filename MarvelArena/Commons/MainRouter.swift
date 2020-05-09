@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol MainRouterProtocol {
+    func presentHomeViewController()
 }
 
 // MARK: MainRouter
@@ -31,5 +32,10 @@ class MainRouter {
 
 // MARK: MainRouterProtocol
 extension MainRouter: MainRouterProtocol {
-
+    
+    func presentHomeViewController() {
+        let homeViewController = HomeRouter.createModule(mainRouter: self)
+        let rootViewController = UINavigationController(rootViewController: homeViewController)
+        window.rootViewController = rootViewController
+    }
 }
