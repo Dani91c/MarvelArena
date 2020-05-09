@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7A2466B40C009E4E1D /* MainRouter.swift */; };
+		01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7E2466B697009E4E1D /* HomeRouter.swift */; };
+		01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B802466B6A5009E4E1D /* HomePresenter.swift */; };
+		01192B832466B6C6009E4E1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B822466B6C6009E4E1D /* HomeViewController.swift */; };
+		01192B852466B6D9009E4E1D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01192B842466B6D9009E4E1D /* HomeViewController.xib */; };
+		01192B882466B734009E4E1D /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B872466B734009E4E1D /* HomeProtocols.swift */; };
+		01192B8B2466C1F5009E4E1D /* Marvel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01192B8A2466C1F5009E4E1D /* Marvel.ttf */; };
 		01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBB24661385004980E9 /* AppDelegate.swift */; };
 		01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBD24661385004980E9 /* SceneDelegate.swift */; };
 		01D53BC024661385004980E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBF24661385004980E9 /* ViewController.swift */; };
-		01D53BC324661385004980E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC124661385004980E9 /* Main.storyboard */; };
 		01D53BC524661386004980E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC424661386004980E9 /* Assets.xcassets */; };
 		01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC624661386004980E9 /* LaunchScreen.storyboard */; };
 		01D53BD324661386004980E9 /* MarvelArenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BD224661386004980E9 /* MarvelArenaTests.swift */; };
@@ -39,11 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01192B7A2466B40C009E4E1D /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		01192B7E2466B697009E4E1D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		01192B802466B6A5009E4E1D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		01192B822466B6C6009E4E1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		01192B842466B6D9009E4E1D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		01192B872466B734009E4E1D /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		01192B8A2466C1F5009E4E1D /* Marvel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marvel.ttf; sourceTree = "<group>"; };
 		01D53BB824661385004980E9 /* MarvelArena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelArena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D53BBB24661385004980E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D53BBD24661385004980E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01D53BBF24661385004980E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01D53BC224661385004980E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01D53BC424661386004980E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D53BC724661386004980E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01D53BC924661386004980E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +105,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01192B792466B3EC009E4E1D /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				01192B892466C1E2009E4E1D /* Fonts */,
+				01192B7A2466B40C009E4E1D /* MainRouter.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		01192B7C2466B662009E4E1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				01192B7D2466B672009E4E1D /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		01192B7D2466B672009E4E1D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				01192B872466B734009E4E1D /* HomeProtocols.swift */,
+				01192B7E2466B697009E4E1D /* HomeRouter.swift */,
+				01192B802466B6A5009E4E1D /* HomePresenter.swift */,
+				01192B822466B6C6009E4E1D /* HomeViewController.swift */,
+				01192B842466B6D9009E4E1D /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		01192B892466C1E2009E4E1D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				01192B8A2466C1F5009E4E1D /* Marvel.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		01D53BAF24661385004980E9 = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +170,12 @@
 				01D53BBB24661385004980E9 /* AppDelegate.swift */,
 				01D53BBD24661385004980E9 /* SceneDelegate.swift */,
 				01D53BBF24661385004980E9 /* ViewController.swift */,
-				01D53BC124661385004980E9 /* Main.storyboard */,
 				01D53BC424661386004980E9 /* Assets.xcassets */,
 				01D53BC624661386004980E9 /* LaunchScreen.storyboard */,
 				01D53BC924661386004980E9 /* Info.plist */,
 				01D53BF024661F3F004980E9 /* Localizable.strings */,
+				01192B792466B3EC009E4E1D /* Commons */,
+				01192B7C2466B662009E4E1D /* Modules */,
 			);
 			path = MarvelArena;
 			sourceTree = "<group>";
@@ -281,8 +331,9 @@
 			files = (
 				01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */,
 				01D53BEE24661F3F004980E9 /* Localizable.strings in Resources */,
+				01192B852466B6D9009E4E1D /* HomeViewController.xib in Resources */,
 				01D53BC524661386004980E9 /* Assets.xcassets in Resources */,
-				01D53BC324661385004980E9 /* Main.storyboard in Resources */,
+				01192B8B2466C1F5009E4E1D /* Marvel.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +446,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D53BC024661385004980E9 /* ViewController.swift in Sources */,
+				01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */,
 				01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */,
+				01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */,
+				01192B882466B734009E4E1D /* HomeProtocols.swift in Sources */,
 				01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */,
+				01192B832466B6C6009E4E1D /* HomeViewController.swift in Sources */,
+				01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,14 +488,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		01D53BC124661385004980E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01D53BC224661385004980E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		01D53BC624661386004980E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

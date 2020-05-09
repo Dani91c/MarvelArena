@@ -5,3 +5,11 @@
   Created by Daniel Carenas Roncero on 09/05/2020.
   Copyright © 2020 Daniel Carenas Roncero. All rights reserved.
 */
+
+//MARK: Home Module
+"home.fistTitleLabel" = "Marvel";
+"home.secondTitleLabel" = "Arena";
+"home.searchSuperheroButton" = "Search Superhero";
+"home.arenaButton" = "Arena";
+"home.rankingButton" = "Ranking";
+

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Marvel.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MarvelArena" customModuleProvider="target">
+            <connections>
+                <outlet property="arenaButton" destination="WHh-lE-bbp" id="To8-mc-6aT"/>
+                <outlet property="firstTitleLabel" destination="Auu-OW-EYV" id="HQH-do-Ggd"/>
+                <outlet property="rankingButton" destination="OIr-5c-ZTH" id="42Q-9b-7zE"/>
+                <outlet property="secondTitleLabel" destination="lug-62-wDi" id="1HF-5q-obL"/>
+                <outlet property="superheroButton" destination="Wac-Fr-0nn" id="yFU-Dg-5vC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vpo-5z-jqJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARVEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-OW-EYV">
+                    <rect key="frame" x="20" y="94" width="374" height="70"/>
+                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="70"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARENA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lug-62-wDi">
+                    <rect key="frame" x="20" y="164" width="374" height="55"/>
+                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="55"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgq-8T-ykZ">
+                    <rect key="frame" x="0.0" y="219" width="414" height="643"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlA-OF-W4M">
+                            <rect key="frame" x="0.0" y="95" width="414" height="260"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wac-Fr-0nn">
+                                    <rect key="frame" x="50" y="0.0" width="314" height="60"/>
+                                    <color key="backgroundColor" red="0.15405294913124618" green="0.16484728428154857" blue="0.19108420498476131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="WQV-8v-A9A">
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </constraint>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="27"/>
+                                    <state key="normal" title="Search Superhero">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="2Y3-1R-5o0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-lE-bbp">
+                                    <rect key="frame" x="50" y="100" width="314" height="60"/>
+                                    <color key="backgroundColor" red="0.1540529491" green="0.16484728430000001" blue="0.19108420500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="UTU-hj-upY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="27"/>
+                                    <state key="normal" title="Arena">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-5c-ZTH">
+                                    <rect key="frame" x="50" y="200" width="314" height="60"/>
+                                    <color key="backgroundColor" red="0.1540529491" green="0.16484728430000001" blue="0.19108420500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="eC7-V8-B28"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="27"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Ranking"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="WHh-lE-bbp" firstAttribute="top" secondItem="Wac-Fr-0nn" secondAttribute="bottom" constant="40" id="0tP-Lv-Oeo"/>
+                                <constraint firstItem="Wac-Fr-0nn" firstAttribute="top" secondItem="IlA-OF-W4M" secondAttribute="top" id="4AT-j9-o6a"/>
+                                <constraint firstItem="WHh-lE-bbp" firstAttribute="leading" secondItem="Wac-Fr-0nn" secondAttribute="leading" id="ADl-LC-r7S"/>
+                                <constraint firstAttribute="bottom" secondItem="OIr-5c-ZTH" secondAttribute="bottom" id="FCv-IL-uxH"/>
+                                <constraint firstItem="OIr-5c-ZTH" firstAttribute="centerX" secondItem="IlA-OF-W4M" secondAttribute="centerX" id="FPt-Yw-BHz"/>
+                                <constraint firstItem="OIr-5c-ZTH" firstAttribute="top" secondItem="WHh-lE-bbp" secondAttribute="bottom" constant="40" id="Gnw-AY-c4b"/>
+                                <constraint firstItem="WHh-lE-bbp" firstAttribute="centerX" secondItem="IlA-OF-W4M" secondAttribute="centerX" id="HuR-0N-fXz"/>
+                                <constraint firstItem="OIr-5c-ZTH" firstAttribute="leading" secondItem="Wac-Fr-0nn" secondAttribute="leading" id="V04-yQ-sDC"/>
+                                <constraint firstItem="Wac-Fr-0nn" firstAttribute="centerX" secondItem="IlA-OF-W4M" secondAttribute="centerX" id="WHh-yQ-NAj"/>
+                                <constraint firstItem="Wac-Fr-0nn" firstAttribute="leading" secondItem="IlA-OF-W4M" secondAttribute="leading" constant="50" id="ecl-c7-L9C"/>
+                                <constraint firstItem="WHh-lE-bbp" firstAttribute="leading" secondItem="Wac-Fr-0nn" secondAttribute="leading" id="xm6-G4-SVZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IlA-OF-W4M" firstAttribute="centerY" secondItem="Fgq-8T-ykZ" secondAttribute="centerY" multiplier="0.7" id="03W-bs-7wd"/>
+                        <constraint firstAttribute="trailing" secondItem="IlA-OF-W4M" secondAttribute="trailing" id="4yb-PA-ZqL"/>
+                        <constraint firstItem="IlA-OF-W4M" firstAttribute="leading" secondItem="Fgq-8T-ykZ" secondAttribute="leading" id="ihm-Bg-cgp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.47239136700000001" green="0.072010464969999993" blue="0.077986009420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Du-M4-pIU" firstAttribute="trailing" secondItem="Fgq-8T-ykZ" secondAttribute="trailing" id="1CQ-B0-mei"/>
+                <constraint firstItem="lug-62-wDi" firstAttribute="leading" secondItem="Auu-OW-EYV" secondAttribute="leading" id="3wi-1h-mtV"/>
+                <constraint firstItem="Fgq-8T-ykZ" firstAttribute="top" secondItem="lug-62-wDi" secondAttribute="bottom" id="Drj-d7-c8E"/>
+                <constraint firstItem="3Du-M4-pIU" firstAttribute="bottom" secondItem="Fgq-8T-ykZ" secondAttribute="bottom" id="Xai-6i-gkn"/>
+                <constraint firstItem="Auu-OW-EYV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aNC-EY-R2V"/>
+                <constraint firstItem="lug-62-wDi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hfX-xX-8d0"/>
+                <constraint firstItem="lug-62-wDi" firstAttribute="top" secondItem="Auu-OW-EYV" secondAttribute="bottom" id="qdw-2v-jea"/>
+                <constraint firstItem="Fgq-8T-ykZ" firstAttribute="leading" secondItem="3Du-M4-pIU" secondAttribute="leading" id="u1i-qd-TTO"/>
+                <constraint firstItem="Auu-OW-EYV" firstAttribute="top" secondItem="3Du-M4-pIU" secondAttribute="top" constant="50" id="wh6-1K-b3f"/>
+                <constraint firstItem="Auu-OW-EYV" firstAttribute="leading" secondItem="3Du-M4-pIU" secondAttribute="leading" constant="20" id="zcy-HM-Ama"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="3Du-M4-pIU"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>
