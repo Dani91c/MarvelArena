@@ -15,6 +15,10 @@
 		01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC624661386004980E9 /* LaunchScreen.storyboard */; };
 		01D53BD324661386004980E9 /* MarvelArenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BD224661386004980E9 /* MarvelArenaTests.swift */; };
 		01D53BDE24661386004980E9 /* MarvelArenaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BDD24661386004980E9 /* MarvelArenaUITests.swift */; };
+		01D53BEE24661F3F004980E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BF024661F3F004980E9 /* Localizable.strings */; };
+		7D1533FA2C294262A9B8B00A /* Pods_MarvelArena_MarvelArenaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE29A00B2D5F818ADCD3E2F /* Pods_MarvelArena_MarvelArenaUITests.framework */; };
+		96E2B83D8811E8667E6C4A51 /* Pods_MarvelArenaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E0FAF04D7AC5B8626F68B5 /* Pods_MarvelArenaTests.framework */; };
+		BFF91496BAA683F86838584C /* Pods_MarvelArena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E9424CC3091E2B373E7373 /* Pods_MarvelArena.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,16 @@
 		01D53BD924661386004980E9 /* MarvelArenaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelArenaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D53BDD24661386004980E9 /* MarvelArenaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelArenaUITests.swift; sourceTree = "<group>"; };
 		01D53BDF24661386004980E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D53BEF24661F3F004980E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		193587B1ED99DC6ED44A9008 /* Pods-MarvelArena-MarvelArenaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArena-MarvelArenaUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelArena-MarvelArenaUITests/Pods-MarvelArena-MarvelArenaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2BE29A00B2D5F818ADCD3E2F /* Pods_MarvelArena_MarvelArenaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelArena_MarvelArenaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3323E85CCAEF9E84469127FB /* Pods-MarvelArena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArena.debug.xcconfig"; path = "Target Support Files/Pods-MarvelArena/Pods-MarvelArena.debug.xcconfig"; sourceTree = "<group>"; };
+		478BCBEBD2F72DDE0F943D03 /* Pods-MarvelArena-MarvelArenaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArena-MarvelArenaUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelArena-MarvelArenaUITests/Pods-MarvelArena-MarvelArenaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		48E9424CC3091E2B373E7373 /* Pods_MarvelArena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelArena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A43211A6683A7CD70FCEEC2 /* Pods-MarvelArenaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArenaTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelArenaTests/Pods-MarvelArenaTests.release.xcconfig"; sourceTree = "<group>"; };
+		916715F5B07DFF65CDDDE588 /* Pods-MarvelArena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArena.release.xcconfig"; path = "Target Support Files/Pods-MarvelArena/Pods-MarvelArena.release.xcconfig"; sourceTree = "<group>"; };
+		B97441839E4C3577A2C10F8F /* Pods-MarvelArenaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelArenaTests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelArenaTests/Pods-MarvelArenaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E0FAF04D7AC5B8626F68B5 /* Pods_MarvelArenaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelArenaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF91496BAA683F86838584C /* Pods_MarvelArena.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E2B83D8811E8667E6C4A51 /* Pods_MarvelArenaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1533FA2C294262A9B8B00A /* Pods_MarvelArena_MarvelArenaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				01D53BD124661386004980E9 /* MarvelArenaTests */,
 				01D53BDC24661386004980E9 /* MarvelArenaUITests */,
 				01D53BB924661385004980E9 /* Products */,
+				E5465E56326CAB5471870EDB /* Pods */,
+				313BD988BCDF47B80878DCC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +125,7 @@
 				01D53BC424661386004980E9 /* Assets.xcassets */,
 				01D53BC624661386004980E9 /* LaunchScreen.storyboard */,
 				01D53BC924661386004980E9 /* Info.plist */,
+				01D53BF024661F3F004980E9 /* Localizable.strings */,
 			);
 			path = MarvelArena;
 			sourceTree = "<group>";
@@ -128,6 +148,29 @@
 			path = MarvelArenaUITests;
 			sourceTree = "<group>";
 		};
+		313BD988BCDF47B80878DCC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E9424CC3091E2B373E7373 /* Pods_MarvelArena.framework */,
+				2BE29A00B2D5F818ADCD3E2F /* Pods_MarvelArena_MarvelArenaUITests.framework */,
+				E1E0FAF04D7AC5B8626F68B5 /* Pods_MarvelArenaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5465E56326CAB5471870EDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3323E85CCAEF9E84469127FB /* Pods-MarvelArena.debug.xcconfig */,
+				916715F5B07DFF65CDDDE588 /* Pods-MarvelArena.release.xcconfig */,
+				478BCBEBD2F72DDE0F943D03 /* Pods-MarvelArena-MarvelArenaUITests.debug.xcconfig */,
+				193587B1ED99DC6ED44A9008 /* Pods-MarvelArena-MarvelArenaUITests.release.xcconfig */,
+				B97441839E4C3577A2C10F8F /* Pods-MarvelArenaTests.debug.xcconfig */,
+				4A43211A6683A7CD70FCEEC2 /* Pods-MarvelArenaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01D53BE224661386004980E9 /* Build configuration list for PBXNativeTarget "MarvelArena" */;
 			buildPhases = (
+				A69C0655F583716B035D438B /* [CP] Check Pods Manifest.lock */,
 				01D53BB424661385004980E9 /* Sources */,
 				01D53BB524661385004980E9 /* Frameworks */,
 				01D53BB624661385004980E9 /* Resources */,
+				01D53BEB24661AC7004980E9 /* SwiftLint Run Script */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01D53BE524661386004980E9 /* Build configuration list for PBXNativeTarget "MarvelArenaTests" */;
 			buildPhases = (
+				3716171651455177BB73CBAF /* [CP] Check Pods Manifest.lock */,
 				01D53BCA24661386004980E9 /* Sources */,
 				01D53BCB24661386004980E9 /* Frameworks */,
 				01D53BCC24661386004980E9 /* Resources */,
@@ -170,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01D53BE824661386004980E9 /* Build configuration list for PBXNativeTarget "MarvelArenaUITests" */;
 			buildPhases = (
+				64C6B8B2CAAB8F1D0AAFE7E4 /* [CP] Check Pods Manifest.lock */,
 				01D53BD524661386004980E9 /* Sources */,
 				01D53BD624661386004980E9 /* Frameworks */,
 				01D53BD724661386004980E9 /* Resources */,
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */,
+				01D53BEE24661F3F004980E9 /* Localizable.strings in Resources */,
 				01D53BC524661386004980E9 /* Assets.xcassets in Resources */,
 				01D53BC324661385004980E9 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +301,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01D53BEB24661AC7004980E9 /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		3716171651455177BB73CBAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelArenaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C6B8B2CAAB8F1D0AAFE7E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelArena-MarvelArenaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69C0655F583716B035D438B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelArena-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01D53BB424661385004980E9 /* Sources */ = {
@@ -311,6 +446,14 @@
 				01D53BC724661386004980E9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		01D53BF024661F3F004980E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D53BEF24661F3F004980E9 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,11 +575,13 @@
 		};
 		01D53BE324661386004980E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3323E85CCAEF9E84469127FB /* Pods-MarvelArena.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8ZGDP2KLT;
 				INFOPLIST_FILE = MarvelArena/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,17 +589,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DCR.MarvelArena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		01D53BE424661386004980E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916715F5B07DFF65CDDDE588 /* Pods-MarvelArena.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8ZGDP2KLT;
 				INFOPLIST_FILE = MarvelArena/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,12 +609,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DCR.MarvelArena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		01D53BE624661386004980E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97441839E4C3577A2C10F8F /* Pods-MarvelArenaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +638,7 @@
 		};
 		01D53BE724661386004980E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A43211A6683A7CD70FCEEC2 /* Pods-MarvelArenaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +661,7 @@
 		};
 		01D53BE924661386004980E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478BCBEBD2F72DDE0F943D03 /* Pods-MarvelArena-MarvelArenaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +682,7 @@
 		};
 		01D53BEA24661386004980E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 193587B1ED99DC6ED44A9008 /* Pods-MarvelArena-MarvelArenaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
