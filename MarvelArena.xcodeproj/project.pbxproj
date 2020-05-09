@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7A2466B40C009E4E1D /* MainRouter.swift */; };
 		01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBB24661385004980E9 /* AppDelegate.swift */; };
 		01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBD24661385004980E9 /* SceneDelegate.swift */; };
 		01D53BC024661385004980E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBF24661385004980E9 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01192B7A2466B40C009E4E1D /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		01D53BB824661385004980E9 /* MarvelArena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelArena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D53BBB24661385004980E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D53BBD24661385004980E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01192B792466B3EC009E4E1D /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				01192B7A2466B40C009E4E1D /* MainRouter.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		01D53BAF24661385004980E9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 				01D53BC624661386004980E9 /* LaunchScreen.storyboard */,
 				01D53BC924661386004980E9 /* Info.plist */,
 				01D53BF024661F3F004980E9 /* Localizable.strings */,
+				01192B792466B3EC009E4E1D /* Commons */,
 			);
 			path = MarvelArena;
 			sourceTree = "<group>";
@@ -395,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D53BC024661385004980E9 /* ViewController.swift in Sources */,
+				01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */,
 				01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */,
 				01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */,
 			);
