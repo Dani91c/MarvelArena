@@ -273,6 +273,7 @@
 				01D53BB524661385004980E9 /* Frameworks */,
 				01D53BB624661385004980E9 /* Resources */,
 				01D53BEB24661AC7004980E9 /* SwiftLint Run Script */,
+				6FF0EF241DDEF79B3A13BC24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +311,7 @@
 				01D53BD524661386004980E9 /* Sources */,
 				01D53BD624661386004980E9 /* Frameworks */,
 				01D53BD724661386004980E9 /* Resources */,
+				73F999B63B7EBC0746B16EA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,6 +457,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF0EF241DDEF79B3A13BC24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelArena/Pods-MarvelArena-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelArena/Pods-MarvelArena-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelArena/Pods-MarvelArena-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F999B63B7EBC0746B16EA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelArena-MarvelArenaUITests/Pods-MarvelArena-MarvelArenaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelArena-MarvelArenaUITests/Pods-MarvelArena-MarvelArenaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelArena-MarvelArenaUITests/Pods-MarvelArena-MarvelArenaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A69C0655F583716B035D438B /* [CP] Check Pods Manifest.lock */ = {

@@ -7,6 +7,7 @@ target 'MarvelArena' do
 
   # Pods for MarvelArena
   pod 'SwiftLint'
+  pod 'Alamofire'
 
   target 'MarvelArenaTests' do
     inherit! :search_paths

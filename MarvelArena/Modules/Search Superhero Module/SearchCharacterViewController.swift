@@ -15,6 +15,7 @@ class SearchCharacterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).backgroundColor = UIColor.redColor
     }
 }
 
