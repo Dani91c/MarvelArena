@@ -12,6 +12,8 @@
 		010DBEF6246858AB000F2DF9 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEF5246858AB000F2DF9 /* CharacterDetailPresenter.swift */; };
 		010DBEF8246858B6000F2DF9 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEF7246858B6000F2DF9 /* CharacterDetailViewController.swift */; };
 		010DBEFA24686092000F2DF9 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */; };
+		010DBEFF2468655E000F2DF9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEFE2468655E000F2DF9 /* BaseViewController.swift */; };
+		010DBF0224686605000F2DF9 /* UIViewController + Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF0124686605000F2DF9 /* UIViewController + Spinner.swift */; };
 		01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7A2466B40C009E4E1D /* MainRouter.swift */; };
 		01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7E2466B697009E4E1D /* HomeRouter.swift */; };
 		01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B802466B6A5009E4E1D /* HomePresenter.swift */; };
@@ -68,6 +70,8 @@
 		010DBEF5246858AB000F2DF9 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
 		010DBEF7246858B6000F2DF9 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
+		010DBEFE2468655E000F2DF9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		010DBF0124686605000F2DF9 /* UIViewController + Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Spinner.swift"; sourceTree = "<group>"; };
 		01192B7A2466B40C009E4E1D /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		01192B7E2466B697009E4E1D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		01192B802466B6A5009E4E1D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -153,14 +157,24 @@
 			path = "Character Detail";
 			sourceTree = "<group>";
 		};
+		010DBF00246865F4000F2DF9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				010DBF0124686605000F2DF9 /* UIViewController + Spinner.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		01192B792466B3EC009E4E1D /* Commons */ = {
 			isa = PBXGroup;
 			children = (
 				01192BAD24672394009E4E1D /* Models */,
 				01192B972466D996009E4E1D /* MarvelAPI */,
 				01192B892466C1E2009E4E1D /* Fonts */,
+				010DBF00246865F4000F2DF9 /* Extension */,
 				01192B7A2466B40C009E4E1D /* MainRouter.swift */,
 				01192BAB24671DDA009E4E1D /* Constants.swift */,
+				010DBEFE2468655E000F2DF9 /* BaseViewController.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -591,6 +605,8 @@
 				01192BAC24671DDA009E4E1D /* Constants.swift in Sources */,
 				01D53BC024661385004980E9 /* ViewController.swift in Sources */,
 				01192B9F2466FA47009E4E1D /* SearchCharacterRouter.swift in Sources */,
+				010DBEFF2468655E000F2DF9 /* BaseViewController.swift in Sources */,
+				010DBF0224686605000F2DF9 /* UIViewController + Spinner.swift in Sources */,
 				01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */,
 				01192B9B2466D9E4009E4E1D /* SearchCharacterViewController.swift in Sources */,
 				010DBEF22468588C000F2DF9 /* CharacterDetailProtocols.swift in Sources */,

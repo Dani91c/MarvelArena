@@ -26,10 +26,12 @@ class SearchCharacterPresenter {
 extension SearchCharacterPresenter: SearchCharacterPresenterProtocol {
     
     func searchCharactersButtonClicked(with name: String) {
+        view?.showLoading(true)
         interactor?.requestCharacters(with: name)
     }
     
     func randomButtonClicked() {
+        view?.showLoading(true)
         interactor?.requestCharacters(with: nil)
     }
     
@@ -47,10 +49,12 @@ extension SearchCharacterPresenter: MarvelAPIInteractorOutputProtocol {
     
     func foundCharacters(_ characters: [Character]) {
         self.characters = characters
+        view?.showLoading(false)
         view?.setCharacters(characters)
     }
     
     func requestCharactersError(_ error: String) {
-        view?.setError(error)
+        view?.showLoading(false)
+        view?.showError(error)
     }
 }

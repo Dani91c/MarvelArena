@@ -23,5 +23,6 @@ protocol SearchCharacterPresenterProtocol: class {
 // MARK: View
 protocol SearchCharacterViewProtocol: class {
     func setCharacters(_ characters: [Character])
-    func setError(_ error: String)
+    func showLoading(_ isShown: Bool)
+    func showError(_ error: String)
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: SearchCharacterViewController
-class SearchCharacterViewController: UIViewController {
+class SearchCharacterViewController: BaseViewController {
     
     let chatacterCellID = "CharacterTableViewCell"
     
@@ -29,6 +29,14 @@ class SearchCharacterViewController: UIViewController {
         presenter?.randomButtonClicked()
         searchBar.resignFirstResponder()
         searchBar.text = ""
+    }
+    
+    override func errorButtonTouchUpInside() {
+        characters = []
+        tableView.reloadData()
+        tableView.isHidden = true
+        informationLabel.isHidden = false
+        informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
     }
     
     override func viewDidLoad() {
@@ -92,7 +100,7 @@ extension SearchCharacterViewController: UITableViewDelegate, UITableViewDataSou
 }
 
 // MARK: SearchCharacterViewController protocol
-extension SearchCharacterViewController: SearchCharacterViewProtocol {
+extension SearchCharacterViewController: SearchCharacterViewProtocol {    
     
     func setCharacters(_ characters: [Character]) {
         
@@ -107,8 +115,5 @@ extension SearchCharacterViewController: SearchCharacterViewProtocol {
             informationLabel.text = NSLocalizedString("searchCharacter.noResultsError", comment: "")
             informationLabel.isHidden = false
         }
-    }
-    
-    func setError(_ error: String) {
     }
 }
