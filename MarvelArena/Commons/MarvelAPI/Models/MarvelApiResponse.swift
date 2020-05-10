@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 // MARK: MarvelAPIResponse
 struct MarvelAPIResponse: Codable {
     let code: Int

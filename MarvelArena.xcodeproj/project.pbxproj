@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010DBEF22468588C000F2DF9 /* CharacterDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEF12468588C000F2DF9 /* CharacterDetailProtocols.swift */; };
+		010DBEF42468589E000F2DF9 /* CharacterDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEF32468589E000F2DF9 /* CharacterDetailRouter.swift */; };
+		010DBEF6246858AB000F2DF9 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEF5246858AB000F2DF9 /* CharacterDetailPresenter.swift */; };
+		010DBEF8246858B6000F2DF9 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEF7246858B6000F2DF9 /* CharacterDetailViewController.swift */; };
+		010DBEFA24686092000F2DF9 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */; };
 		01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7A2466B40C009E4E1D /* MainRouter.swift */; };
 		01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7E2466B697009E4E1D /* HomeRouter.swift */; };
 		01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B802466B6A5009E4E1D /* HomePresenter.swift */; };
@@ -58,6 +63,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010DBEF12468588C000F2DF9 /* CharacterDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailProtocols.swift; sourceTree = "<group>"; };
+		010DBEF32468589E000F2DF9 /* CharacterDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouter.swift; sourceTree = "<group>"; };
+		010DBEF5246858AB000F2DF9 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		010DBEF7246858B6000F2DF9 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		01192B7A2466B40C009E4E1D /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		01192B7E2466B697009E4E1D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		01192B802466B6A5009E4E1D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -131,6 +141,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010DBEEE246857F5000F2DF9 /* Character Detail */ = {
+			isa = PBXGroup;
+			children = (
+				010DBEF12468588C000F2DF9 /* CharacterDetailProtocols.swift */,
+				010DBEF32468589E000F2DF9 /* CharacterDetailRouter.swift */,
+				010DBEF5246858AB000F2DF9 /* CharacterDetailPresenter.swift */,
+				010DBEF7246858B6000F2DF9 /* CharacterDetailViewController.swift */,
+				010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */,
+			);
+			path = "Character Detail";
+			sourceTree = "<group>";
+		};
 		01192B792466B3EC009E4E1D /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				01192B7D2466B672009E4E1D /* Home */,
-				01192B8C2466D867009E4E1D /* Search Character Module */,
+				01192B8C2466D867009E4E1D /* Search Character */,
+				010DBEEE246857F5000F2DF9 /* Character Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -172,7 +195,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		01192B8C2466D867009E4E1D /* Search Character Module */ = {
+		01192B8C2466D867009E4E1D /* Search Character */ = {
 			isa = PBXGroup;
 			children = (
 				01192BA224670E60009E4E1D /* Character Cell */,
@@ -182,7 +205,7 @@
 				01192B9A2466D9E4009E4E1D /* SearchCharacterViewController.swift */,
 				01192B9C2466F666009E4E1D /* SearchCharacterViewController.xib */,
 			);
-			path = "Search Character Module";
+			path = "Search Character";
 			sourceTree = "<group>";
 		};
 		01192B972466D996009E4E1D /* MarvelAPI */ = {
@@ -413,6 +436,7 @@
 				01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */,
 				01D53BEE24661F3F004980E9 /* Localizable.strings in Resources */,
 				01192BAA2467126F009E4E1D /* CharacterTableViewCell.xib in Resources */,
+				010DBEFA24686092000F2DF9 /* CharacterDetailViewController.xib in Resources */,
 				01192B9D2466F666009E4E1D /* SearchCharacterViewController.xib in Resources */,
 				01192B852466B6D9009E4E1D /* HomeViewController.xib in Resources */,
 				01D53BC524661386004980E9 /* Assets.xcassets in Resources */,
@@ -563,22 +587,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				01192B962466D96A009E4E1D /* SearchCharacterPresenter.swift in Sources */,
+				010DBEF42468589E000F2DF9 /* CharacterDetailRouter.swift in Sources */,
 				01192BAC24671DDA009E4E1D /* Constants.swift in Sources */,
 				01D53BC024661385004980E9 /* ViewController.swift in Sources */,
 				01192B9F2466FA47009E4E1D /* SearchCharacterRouter.swift in Sources */,
 				01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */,
 				01192B9B2466D9E4009E4E1D /* SearchCharacterViewController.swift in Sources */,
+				010DBEF22468588C000F2DF9 /* CharacterDetailProtocols.swift in Sources */,
 				01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */,
 				01192B992466D9A9009E4E1D /* MarvelAPIDataSource.swift in Sources */,
 				01192BA124670894009E4E1D /* MarvelApiProtocols.swift in Sources */,
 				01192BAF246723AC009E4E1D /* Character.swift in Sources */,
 				01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */,
+				010DBEF6246858AB000F2DF9 /* CharacterDetailPresenter.swift in Sources */,
 				01192B8E2466D8AB009E4E1D /* SearchCharacterProtocols.swift in Sources */,
 				01192B882466B734009E4E1D /* HomeProtocols.swift in Sources */,
 				01192BA92467126F009E4E1D /* CharacterTableViewCell.swift in Sources */,
 				01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */,
 				01192BB32468069D009E4E1D /* MarvelApiResponse.swift in Sources */,
 				01192B832466B6C6009E4E1D /* HomeViewController.swift in Sources */,
+				010DBEF8246858B6000F2DF9 /* CharacterDetailViewController.swift in Sources */,
 				01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */,
 				01192B922466D8CC009E4E1D /* MarvelAPIInteractor.swift in Sources */,
 			);

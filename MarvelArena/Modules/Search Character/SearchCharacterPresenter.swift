@@ -12,6 +12,8 @@ class SearchCharacterPresenter {
     weak private var view: SearchCharacterViewProtocol?
     var interactor: MarvelAPIInteractorInputProtocol?
     private let router: SearchCharacterRouterProtocol
+    
+    var characters: [Character]?
 
     init(interface: SearchCharacterViewProtocol, interactor: MarvelAPIInteractorInputProtocol?, router: SearchCharacterRouterProtocol) {
         self.view = interface
@@ -34,12 +36,17 @@ extension SearchCharacterPresenter: SearchCharacterPresenterProtocol {
     func backButtonClicked() {
         router.navigateToPreviousViewController()
     }
+    
+    func characterClicked(at index: Int) {
+        router.showshowCharacterDetailViewController(of: characters![index])
+    }
 }
 
 // MARK: MarvelAPI InteractorOutput Protocol
 extension SearchCharacterPresenter: MarvelAPIInteractorOutputProtocol {
     
     func foundCharacters(_ characters: [Character]) {
+        self.characters = characters
         view?.setCharacters(characters)
     }
     

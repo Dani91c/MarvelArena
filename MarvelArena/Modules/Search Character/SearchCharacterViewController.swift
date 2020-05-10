@@ -20,7 +20,6 @@ class SearchCharacterViewController: UIViewController {
     var presenter: SearchCharacterPresenterProtocol?
     
     var characters: [Character] = []
-    var tableHasBeenFirstAnimated: Bool = false
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
         presenter?.backButtonClicked()
@@ -45,7 +44,6 @@ class SearchCharacterViewController: UIViewController {
         tableView.isHidden = true
         
         setTextInLanguage()
-        hideKeyboardWhenTappedAround()
         
         searchBar.barTintColor = UIColor(red: 221/255.0, green: 58/255.0, blue: 49/255.0, alpha: 1.0)
         
@@ -58,15 +56,6 @@ class SearchCharacterViewController: UIViewController {
     private func setTextInLanguage() {
         
         informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
-    }
-    
-    private func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
     }
 }
 
@@ -88,10 +77,13 @@ extension SearchCharacterViewController: UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: chatacterCellID, for: indexPath) as? CharacterTableViewCell
         cell?.characterImage.image = characters[indexPath.row].image
         cell?.characterNameLabel.text = characters[indexPath.row].name.uppercased()
+        cell?.selectionStyle = .none
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.characterClicked(at: indexPath.row)
+        searchBar.resignFirstResponder()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -105,7 +97,6 @@ extension SearchCharacterViewController: SearchCharacterViewProtocol {
     func setCharacters(_ characters: [Character]) {
         
         if characters.count > 0 {
-            tableHasBeenFirstAnimated = false
             self.characters = characters
             tableView.reloadData()
             tableView.isHidden = false

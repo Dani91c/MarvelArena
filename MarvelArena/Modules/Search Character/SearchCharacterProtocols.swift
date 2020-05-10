@@ -9,6 +9,7 @@
 // MARK: Wireframe
 protocol SearchCharacterRouterProtocol: class {
     func navigateToPreviousViewController()
+    func showshowCharacterDetailViewController(of character: Character)
 }
 
 // MARK: Presenter
@@ -16,6 +17,7 @@ protocol SearchCharacterPresenterProtocol: class {
     func searchCharactersButtonClicked(with name: String)
     func randomButtonClicked()
     func backButtonClicked()
+    func characterClicked(at index: Int)
 }
 
 // MARK: View
