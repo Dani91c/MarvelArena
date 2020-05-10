@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 
 protocol MainRouterProtocol {
+    func showPreviousViewController(animated: Bool)
     func presentHomeViewController()
+    func showSearchCharacterViewController()
+    func showArenaViewController()
+    func showRankingViewController()
 }
 
 // MARK: MainRouter
@@ -28,14 +32,41 @@ class MainRouter {
         }
         return rootViewController
     }
+    
+    private func navigationController() -> UINavigationController? {
+        if rootViewController.navigationController == nil {
+            return (rootViewController as? UINavigationController)
+        } else {
+            return rootViewController.navigationController
+        }
+    }
+    
+    private func push(viewController: UIViewController, animated: Bool) {
+        navigationController()?.pushViewController(viewController, animated: animated)
+    }
 }
 
 // MARK: MainRouterProtocol
 extension MainRouter: MainRouterProtocol {
+
+    func showPreviousViewController(animated: Bool) {
+        navigationController()?.popViewController(animated: animated)
+    }
     
     func presentHomeViewController() {
         let homeViewController = HomeRouter.createModule(mainRouter: self)
         let rootViewController = UINavigationController(rootViewController: homeViewController)
         window.rootViewController = rootViewController
+    }
+    
+    func showSearchCharacterViewController() {
+        let searchCharacterViewController = SearchCharacterRouter.createModule(mainRouter: self)
+        push(viewController: searchCharacterViewController, animated: true)
+    }
+    
+    func showArenaViewController() {
+    }
+    
+    func showRankingViewController() {
     }
 }

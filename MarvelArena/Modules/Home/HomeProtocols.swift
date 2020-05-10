@@ -8,10 +8,14 @@
 
 // MARK: Wireframe
 protocol HomeRouterProtocol: class {
+    func showSearchCharacterViewController()
+    func showArenaViewController()
+    func showRankingViewController()
 }
 
 // MARK: Presenter
 protocol HomePresenterProtocol: class {
+    func buttonClicked(position: Int)
 }
 
 // MARK: View

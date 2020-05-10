@@ -17,8 +17,8 @@
                 <outlet property="arenaButton" destination="WHh-lE-bbp" id="To8-mc-6aT"/>
                 <outlet property="firstTitleLabel" destination="Auu-OW-EYV" id="HQH-do-Ggd"/>
                 <outlet property="rankingButton" destination="OIr-5c-ZTH" id="42Q-9b-7zE"/>
+                <outlet property="searchCharacterButton" destination="Wac-Fr-0nn" id="7Fo-p7-4KQ"/>
                 <outlet property="secondTitleLabel" destination="lug-62-wDi" id="1HF-5q-obL"/>
-                <outlet property="superheroButton" destination="Wac-Fr-0nn" id="yFU-Dg-5vC"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Vpo-5z-jqJ"/>
             </connections>
         </placeholder>
@@ -56,7 +56,7 @@
                                         </constraint>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="27"/>
-                                    <state key="normal" title="Search Superhero">
+                                    <state key="normal" title="Search character">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <userDefinedRuntimeAttributes>
@@ -66,7 +66,7 @@
                                         <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="2Y3-1R-5o0"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-lE-bbp">
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-lE-bbp">
                                     <rect key="frame" x="50" y="100" width="314" height="60"/>
                                     <color key="backgroundColor" red="0.1540529491" green="0.16484728430000001" blue="0.19108420500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -79,8 +79,11 @@
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="eK4-1h-bX4"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-5c-ZTH">
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-5c-ZTH">
                                     <rect key="frame" x="50" y="200" width="314" height="60"/>
                                     <color key="backgroundColor" red="0.1540529491" green="0.16484728430000001" blue="0.19108420500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -92,6 +95,9 @@
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="JKq-IT-Ccy"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
