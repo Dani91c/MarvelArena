@@ -34,4 +34,7 @@ class SearchCharacterRouter {
 
 // MARK: SearchCharacterRouter protocol
 extension SearchCharacterRouter: SearchCharacterRouterProtocol {
+    func navigateToPreviousViewController() {
+        mainRouter.showPreviousViewController(animated: true)
+    }
 }

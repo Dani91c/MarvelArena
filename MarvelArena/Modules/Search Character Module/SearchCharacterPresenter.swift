@@ -21,5 +21,29 @@ class SearchCharacterPresenter {
 }
 
 // MARK: SearchCharacterPresenter protocol
+extension SearchCharacterPresenter: SearchCharacterPresenterProtocol {
+    
+    func searchCharactersButtonClicked(with name: String) {
+        interactor?.requestCharacters(with: name)
+    }
+    
+    func randomButtonClicked() {
+        interactor?.requestCharacters(with: nil)
+    }
+    
+    func backButtonClicked() {
+        router.navigateToPreviousViewController()
+    }
+}
+
+// MARK: MarvelAPI InteractorOutput Protocol
 extension SearchCharacterPresenter: MarvelAPIInteractorOutputProtocol {
+    
+    func foundCharacters(_ characters: [Character]) {
+        view?.setCharacters(characters)
+    }
+    
+    func requestCharactersError(_ error: String) {
+        view?.setError(error)
+    }
 }

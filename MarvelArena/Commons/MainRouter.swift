@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol MainRouterProtocol {
+    func showPreviousViewController(animated: Bool)
     func presentHomeViewController()
     func showSearchCharacterViewController()
     func showArenaViewController()
@@ -47,6 +48,10 @@ class MainRouter {
 
 // MARK: MainRouterProtocol
 extension MainRouter: MainRouterProtocol {
+
+    func showPreviousViewController(animated: Bool) {
+        navigationController()?.popViewController(animated: animated)
+    }
     
     func presentHomeViewController() {
         let homeViewController = HomeRouter.createModule(mainRouter: self)

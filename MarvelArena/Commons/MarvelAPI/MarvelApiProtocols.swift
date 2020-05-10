@@ -8,12 +8,17 @@
 
 // MARK: DataSource
 protocol MarvelAPIDataSourceProtocol: class {
+    func requestCharacters(with name: String?, handle: @escaping Handler)
+    func downloadImageData(from url: String, handle: @escaping Handler)
 }
 
 // MARK: InteractorInput
 protocol MarvelAPIInteractorInputProtocol: class {
+    func requestCharacters(with name: String?)
 }
 
 // MARK: InteractorOutput
 protocol MarvelAPIInteractorOutputProtocol: class {
+    func foundCharacters(_ characters: [Character])
+    func requestCharactersError(_ error: String)
 }

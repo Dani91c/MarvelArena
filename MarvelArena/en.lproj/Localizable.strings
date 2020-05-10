@@ -6,6 +6,10 @@
   Copyright © 2020 Daniel Carenas Roncero. All rights reserved.
 */
 
+// MARK: GENERAL
+"general.serviceError" = "It’s not possible to access the requested information. Please try again later";
+"general.conectivityError" = "Unable to connect, please check your internet connection";
+
 //MARK: Home Module
 "home.fistTitleLabel" = "Marvel";
 "home.secondTitleLabel" = "Arena";
@@ -14,3 +18,5 @@
 "home.rankingButton" = "Ranking";
 
 //MARK: Search Character Module
+"searchCharacter.informationLabel" = "Insert the name of the character you want to search or select the dice for random characters.";
+"searchCharacter.noResultsError" = "No results with the specified name.";
