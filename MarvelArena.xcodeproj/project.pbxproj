@@ -28,7 +28,7 @@
 		01192B9B2466D9E4009E4E1D /* SearchCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B9A2466D9E4009E4E1D /* SearchCharacterViewController.swift */; };
 		01192B9D2466F666009E4E1D /* SearchCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01192B9C2466F666009E4E1D /* SearchCharacterViewController.xib */; };
 		01192B9F2466FA47009E4E1D /* SearchCharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B9E2466FA47009E4E1D /* SearchCharacterRouter.swift */; };
-		01192BA124670894009E4E1D /* MarvelApiProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192BA024670894009E4E1D /* MarvelApiProtocols.swift */; };
+		01192BA124670894009E4E1D /* MarvelAPIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192BA024670894009E4E1D /* MarvelAPIProtocols.swift */; };
 		01192BA92467126F009E4E1D /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192BA72467126F009E4E1D /* CharacterTableViewCell.swift */; };
 		01192BAA2467126F009E4E1D /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01192BA82467126F009E4E1D /* CharacterTableViewCell.xib */; };
 		01192BAC24671DDA009E4E1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192BAB24671DDA009E4E1D /* Constants.swift */; };
@@ -86,7 +86,7 @@
 		01192B9A2466D9E4009E4E1D /* SearchCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharacterViewController.swift; sourceTree = "<group>"; };
 		01192B9C2466F666009E4E1D /* SearchCharacterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCharacterViewController.xib; sourceTree = "<group>"; };
 		01192B9E2466FA47009E4E1D /* SearchCharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharacterRouter.swift; sourceTree = "<group>"; };
-		01192BA024670894009E4E1D /* MarvelApiProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelApiProtocols.swift; sourceTree = "<group>"; };
+		01192BA024670894009E4E1D /* MarvelAPIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIProtocols.swift; sourceTree = "<group>"; };
 		01192BA72467126F009E4E1D /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		01192BA82467126F009E4E1D /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		01192BAB24671DDA009E4E1D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				01192BB224672506009E4E1D /* Models */,
-				01192BA024670894009E4E1D /* MarvelApiProtocols.swift */,
+				01192BA024670894009E4E1D /* MarvelAPIProtocols.swift */,
 				01192B982466D9A9009E4E1D /* MarvelAPIDataSource.swift */,
 				01192B912466D8CC009E4E1D /* MarvelAPIInteractor.swift */,
 			);
@@ -612,7 +612,7 @@
 				010DBEF22468588C000F2DF9 /* CharacterDetailProtocols.swift in Sources */,
 				01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */,
 				01192B992466D9A9009E4E1D /* MarvelAPIDataSource.swift in Sources */,
-				01192BA124670894009E4E1D /* MarvelApiProtocols.swift in Sources */,
+				01192BA124670894009E4E1D /* MarvelAPIProtocols.swift in Sources */,
 				01192BAF246723AC009E4E1D /* Character.swift in Sources */,
 				01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */,
 				010DBEF6246858AB000F2DF9 /* CharacterDetailPresenter.swift in Sources */,
