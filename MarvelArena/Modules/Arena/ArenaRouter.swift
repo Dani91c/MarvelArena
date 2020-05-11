@@ -34,5 +34,12 @@ class ArenaRouter {
 
 // MARK: ArenaRouter protocol
 extension ArenaRouter: ArenaRouterProtocol {
+    
+    func navigateToPreviousViewController() {
+        mainRouter.showPreviousViewController(animated: true)
+    }
+    
+    func showRankingViewController() {
+        mainRouter.showRankingViewController()
+    }
 }
-
