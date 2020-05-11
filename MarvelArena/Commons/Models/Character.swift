@@ -8,16 +8,9 @@
 
 import UIKit
 
-class Character {
+struct Character {
     let name: String
-    let image: UIImage
+    let image: UIImage?
     let description: String?
-    let power: Int?
-    
-    init(name: String, image: UIImage, description: String, power: Int) {
-        self.name = name
-        self.image = image
-        self.description = description
-        self.power = power
-    }
+    let power: Int
 }

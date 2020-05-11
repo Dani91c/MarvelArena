@@ -1,5 +1,5 @@
 //
-//  MarvelApiProtocols.swift
+//  MarvelAPIProtocols.swift
 //  MarvelArena
 //
 //  Created by Daniel Carenas Roncero on 09/05/2020.

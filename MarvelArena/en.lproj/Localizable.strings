@@ -7,6 +7,7 @@
 */
 
 // MARK: GENERAL
+"general.okButton" = "Ok";
 "general.serviceError" = "It’s not possible to access the requested information. Please try again later";
 "general.conectivityError" = "Unable to connect, please check your internet connection";
 
@@ -20,3 +21,6 @@
 //MARK: Search Character Module
 "searchCharacter.informationLabel" = "Insert the name of the character you want to search or select the dice for random characters.";
 "searchCharacter.noResultsError" = "No results with the specified name.";
+
+//MARK: Character Detail Module
+"characterDetail.descriptionNotAvailable" = "Description of this superhero is not available";

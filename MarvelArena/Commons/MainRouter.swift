@@ -15,6 +15,7 @@ protocol MainRouterProtocol {
     func showSearchCharacterViewController()
     func showArenaViewController()
     func showRankingViewController()
+    func showCharacterDetailViewController(of character: Character)
 }
 
 // MARK: MainRouter
@@ -68,5 +69,10 @@ extension MainRouter: MainRouterProtocol {
     }
     
     func showRankingViewController() {
+    }
+
+    func showCharacterDetailViewController(of character: Character) {
+        let characterDetailViewController = CharacterDetailRouter.createModule(of: character, mainRouter: self)
+        push(viewController: characterDetailViewController, animated: true)
     }
 }
