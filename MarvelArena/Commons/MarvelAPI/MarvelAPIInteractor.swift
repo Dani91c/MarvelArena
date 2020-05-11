@@ -28,21 +28,22 @@ extension MarvelAPIInteractor: MarvelAPIInteractorInputProtocol {
                     let marvelAPIResponse = try JSONDecoder().decode(MarvelAPIResponse.self, from: data!)
                     var characters: [Character] = []
                     for character in marvelAPIResponse.data.results {
-//                        if !character.thumbnail.path.contains("image_not_available") {
-                            let imageUrl = "\(character.thumbnail.path).\(character.thumbnail.thumbnailExtension)"
+                        
+                        var image: UIImage?
+                        let imageUrl = "\(character.thumbnail.path).\(character.thumbnail.thumbnailExtension)"
+                        if !imageUrl.contains("image_not_available") {
                             self.dataSource?.downloadImageData(from: imageUrl, handle: { (isSuccess, imageData, error) in
-                                if isSuccess, let image = UIImage(data: imageData!) {
-                                    let character = Character(name: character.name,
-                                                              image: image,
-                                                              description: character.resultDescription,
-                                                              power: character.comics.available)
-                                    characters.append(character)
-                                } else {
-                                    self.presenter?.requestCharactersError(error!)
-                                    return
+                                if isSuccess {
+                                    image = UIImage(data: imageData!)
                                 }
                             })
-//                        }
+                        }
+                        
+                        let character = Character(name: character.name,
+                                                  image: image,
+                                                  description: character.resultDescription,
+                                                  power: character.comics.available)
+                        characters.append(character)
                     }
                     self.presenter?.foundCharacters(characters)
                 } catch {
