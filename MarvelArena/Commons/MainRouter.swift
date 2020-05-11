@@ -66,6 +66,8 @@ extension MainRouter: MainRouterProtocol {
     }
     
     func showArenaViewController() {
+        let arenaViewController = ArenaRouter.createModule(mainRouter: self)
+        push(viewController: arenaViewController, animated: true)
     }
     
     func showRankingViewController() {
