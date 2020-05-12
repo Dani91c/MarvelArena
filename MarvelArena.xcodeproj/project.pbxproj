@@ -14,6 +14,13 @@
 		010DBEFA24686092000F2DF9 /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */; };
 		010DBEFF2468655E000F2DF9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBEFE2468655E000F2DF9 /* BaseViewController.swift */; };
 		010DBF0224686605000F2DF9 /* UIViewController + Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF0124686605000F2DF9 /* UIViewController + Spinner.swift */; };
+		010DBF412469C898000F2DF9 /* ArenaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF402469C898000F2DF9 /* ArenaProtocols.swift */; };
+		010DBF432469C8A7000F2DF9 /* ArenaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF422469C8A7000F2DF9 /* ArenaRouter.swift */; };
+		010DBF452469C8B6000F2DF9 /* ArenaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF442469C8B6000F2DF9 /* ArenaPresenter.swift */; };
+		010DBF472469C8C6000F2DF9 /* ArenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF462469C8C6000F2DF9 /* ArenaViewController.swift */; };
+		010DBF492469C8E3000F2DF9 /* ArenaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010DBF482469C8E3000F2DF9 /* ArenaViewController.xib */; };
+		010DBF4F2469D780000F2DF9 /* ArenaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DBF4D2469D780000F2DF9 /* ArenaTableViewCell.swift */; };
+		010DBF502469D780000F2DF9 /* ArenaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010DBF4E2469D780000F2DF9 /* ArenaTableViewCell.xib */; };
 		01192B7B2466B40C009E4E1D /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7A2466B40C009E4E1D /* MainRouter.swift */; };
 		01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B7E2466B697009E4E1D /* HomeRouter.swift */; };
 		01192B812466B6A5009E4E1D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01192B802466B6A5009E4E1D /* HomePresenter.swift */; };
@@ -72,6 +79,13 @@
 		010DBEF924686092000F2DF9 /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		010DBEFE2468655E000F2DF9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		010DBF0124686605000F2DF9 /* UIViewController + Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Spinner.swift"; sourceTree = "<group>"; };
+		010DBF402469C898000F2DF9 /* ArenaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaProtocols.swift; sourceTree = "<group>"; };
+		010DBF422469C8A7000F2DF9 /* ArenaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaRouter.swift; sourceTree = "<group>"; };
+		010DBF442469C8B6000F2DF9 /* ArenaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaPresenter.swift; sourceTree = "<group>"; };
+		010DBF462469C8C6000F2DF9 /* ArenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaViewController.swift; sourceTree = "<group>"; };
+		010DBF482469C8E3000F2DF9 /* ArenaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArenaViewController.xib; sourceTree = "<group>"; };
+		010DBF4D2469D780000F2DF9 /* ArenaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaTableViewCell.swift; sourceTree = "<group>"; };
+		010DBF4E2469D780000F2DF9 /* ArenaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArenaTableViewCell.xib; sourceTree = "<group>"; };
 		01192B7A2466B40C009E4E1D /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		01192B7E2466B697009E4E1D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		01192B802466B6A5009E4E1D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -165,6 +179,28 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		010DBF3F2469C87D000F2DF9 /* Arena */ = {
+			isa = PBXGroup;
+			children = (
+				010DBF4A2469D747000F2DF9 /* Arena Cell */,
+				010DBF402469C898000F2DF9 /* ArenaProtocols.swift */,
+				010DBF422469C8A7000F2DF9 /* ArenaRouter.swift */,
+				010DBF442469C8B6000F2DF9 /* ArenaPresenter.swift */,
+				010DBF462469C8C6000F2DF9 /* ArenaViewController.swift */,
+				010DBF482469C8E3000F2DF9 /* ArenaViewController.xib */,
+			);
+			path = Arena;
+			sourceTree = "<group>";
+		};
+		010DBF4A2469D747000F2DF9 /* Arena Cell */ = {
+			isa = PBXGroup;
+			children = (
+				010DBF4D2469D780000F2DF9 /* ArenaTableViewCell.swift */,
+				010DBF4E2469D780000F2DF9 /* ArenaTableViewCell.xib */,
+			);
+			path = "Arena Cell";
+			sourceTree = "<group>";
+		};
 		01192B792466B3EC009E4E1D /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +221,7 @@
 				01192B7D2466B672009E4E1D /* Home */,
 				01192B8C2466D867009E4E1D /* Search Character */,
 				010DBEEE246857F5000F2DF9 /* Character Detail */,
+				010DBF3F2469C87D000F2DF9 /* Arena */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -454,7 +491,9 @@
 				01192B9D2466F666009E4E1D /* SearchCharacterViewController.xib in Resources */,
 				01192B852466B6D9009E4E1D /* HomeViewController.xib in Resources */,
 				01D53BC524661386004980E9 /* Assets.xcassets in Resources */,
+				010DBF502469D780000F2DF9 /* ArenaTableViewCell.xib in Resources */,
 				01192B8B2466C1F5009E4E1D /* Marvel.ttf in Resources */,
+				010DBF492469C8E3000F2DF9 /* ArenaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01192B962466D96A009E4E1D /* SearchCharacterPresenter.swift in Sources */,
+				010DBF472469C8C6000F2DF9 /* ArenaViewController.swift in Sources */,
 				010DBEF42468589E000F2DF9 /* CharacterDetailRouter.swift in Sources */,
 				01192BAC24671DDA009E4E1D /* Constants.swift in Sources */,
 				01D53BC024661385004980E9 /* ViewController.swift in Sources */,
@@ -618,13 +658,17 @@
 				010DBEF6246858AB000F2DF9 /* CharacterDetailPresenter.swift in Sources */,
 				01192B8E2466D8AB009E4E1D /* SearchCharacterProtocols.swift in Sources */,
 				01192B882466B734009E4E1D /* HomeProtocols.swift in Sources */,
+				010DBF452469C8B6000F2DF9 /* ArenaPresenter.swift in Sources */,
 				01192BA92467126F009E4E1D /* CharacterTableViewCell.swift in Sources */,
 				01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */,
 				01192BB32468069D009E4E1D /* MarvelApiResponse.swift in Sources */,
+				010DBF432469C8A7000F2DF9 /* ArenaRouter.swift in Sources */,
 				01192B832466B6C6009E4E1D /* HomeViewController.swift in Sources */,
 				010DBEF8246858B6000F2DF9 /* CharacterDetailViewController.swift in Sources */,
 				01192B7F2466B697009E4E1D /* HomeRouter.swift in Sources */,
+				010DBF4F2469D780000F2DF9 /* ArenaTableViewCell.swift in Sources */,
 				01192B922466D8CC009E4E1D /* MarvelAPIInteractor.swift in Sources */,
+				010DBF412469C898000F2DF9 /* ArenaProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

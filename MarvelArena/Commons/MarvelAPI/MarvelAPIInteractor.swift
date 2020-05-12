@@ -32,7 +32,7 @@ extension MarvelAPIInteractor: MarvelAPIInteractorInputProtocol {
                         var image: UIImage?
                         let imageUrl = "\(character.thumbnail.path).\(character.thumbnail.thumbnailExtension)"
                         if !imageUrl.contains("image_not_available") {
-                            self.dataSource?.downloadImageData(from: imageUrl, handle: { (isSuccess, imageData, error) in
+                            self.dataSource?.downloadImageData(from: imageUrl, handle: { (isSuccess, imageData, _) in
                                 if isSuccess {
                                     image = UIImage(data: imageData!)
                                 }
