@@ -24,3 +24,7 @@
 
 //MARK: Character Detail Module
 "characterDetail.descriptionNotAvailable" = "Description of this superhero is not available";
+
+//MARK: Ranking Module
+"ranking.titleLabel" = "Ranking";
+"ranking.informationLabel" = "There are no results to show.";

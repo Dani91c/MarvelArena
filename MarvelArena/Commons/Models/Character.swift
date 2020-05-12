@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct Character {
+struct Character: Codable {
     let name: String
-    let image: UIImage?
+    let image: Data?
     let description: String?
     let power: Int
 }

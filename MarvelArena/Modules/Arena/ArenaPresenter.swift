@@ -66,7 +66,9 @@ extension ArenaPresenter: ArenaPresenterProtocol {
     }
     
     func rankingButtonClicked() {
+        UserDefaultsManager.addToCharacterRanking([playerOneCharacter!, playerTwoCharacter!])
         router.showRankingViewController()
+        view?.resetScreen()
     }
 }
 

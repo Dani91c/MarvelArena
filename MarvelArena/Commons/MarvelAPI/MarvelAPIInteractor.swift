@@ -29,12 +29,12 @@ extension MarvelAPIInteractor: MarvelAPIInteractorInputProtocol {
                     var characters: [Character] = []
                     for character in marvelAPIResponse.data.results {
                         
-                        var image: UIImage?
+                        var image: Data?
                         let imageUrl = "\(character.thumbnail.path).\(character.thumbnail.thumbnailExtension)"
                         if !imageUrl.contains("image_not_available") {
                             self.dataSource?.downloadImageData(from: imageUrl, handle: { (isSuccess, imageData, _) in
                                 if isSuccess {
-                                    image = UIImage(data: imageData!)
+                                    image = imageData!
                                 }
                             })
                         }
