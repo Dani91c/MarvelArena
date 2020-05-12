@@ -12,7 +12,7 @@ class RankingPresenter {
     weak private var view: RankingViewProtocol?
     private let router: RankingRouterProtocol
     
-    var characters: [Character]?
+    var sortedCharacters: [Character]?
 
     init(interface: RankingViewProtocol, router: RankingRouterProtocol) {
         self.view = interface
@@ -22,4 +22,22 @@ class RankingPresenter {
 
 // MARK: RankingPresenter protocol
 extension RankingPresenter: RankingPresenterProtocol {
+    
+    func viewDidLoad() {
+        let characters = UserDefaultsManager.getCharacterRanking()
+        if characters.count > 0 {
+            sortedCharacters = characters.sorted { $0.power > $1.power }
+            view?.setRanking(sortedCharacters!)
+        } else {
+            view?.setInformationLabel()
+        }
+    }
+    
+    func backButtonClicked() {
+        router.navigateToPreviousViewController()
+    }
+    
+    func characterClicked(at index: Int) {
+        router.showshowCharacterDetailViewController(of: sortedCharacters![index])
+    }
 }

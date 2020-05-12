@@ -124,7 +124,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akg-uV-Swi" userLabel="Player1 View">
                             <rect key="frame" x="3" y="3" width="202.5" height="213"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_character_image" translatesAutoresizingMaskIntoConstraints="NO" id="MBU-QN-oKQ" userLabel="Player1 ImageView">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_unselected_player" translatesAutoresizingMaskIntoConstraints="NO" id="MBU-QN-oKQ" userLabel="Player1 ImageView">
                                     <rect key="frame" x="0.0" y="0.0" width="202.5" height="213"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="MBU-QN-oKQ" secondAttribute="height" multiplier="19:20" id="gWy-Lt-VDm"/>
@@ -162,7 +162,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPU-oj-8xc" userLabel="Player2 View">
                             <rect key="frame" x="208.5" y="3" width="202.5" height="213"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_character_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-Pg-Rcj" userLabel="Player2 ImageView">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_unselected_player" translatesAutoresizingMaskIntoConstraints="NO" id="Ewc-Pg-Rcj" userLabel="Player2 ImageView">
                                     <rect key="frame" x="0.0" y="0.0" width="202.5" height="213"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-xl-Hvb" userLabel="Player2 Name View">
@@ -239,8 +239,8 @@
         </view>
     </objects>
     <resources>
-        <image name="default_character_image" width="78" height="71.666664123535156"/>
         <image name="icon_back_button" width="30" height="30"/>
         <image name="icon_dice" width="96" height="96"/>
+        <image name="icon_unselected_player" width="234" height="215"/>
     </resources>
 </document>

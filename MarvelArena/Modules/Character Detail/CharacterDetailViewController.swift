@@ -32,7 +32,7 @@ extension CharacterDetailViewController: CharacterDetailViewProtocol {
     
     func setCharacterDetail(of character: Character) {
         characterNameLabel.text = character.name.uppercased()
-        characterImageView.image = character.image
+        characterImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
         characterDescriptionLabel.text = character.description != "" ? character.description : NSLocalizedString("characterDetail.descriptionNotAvailable", comment: "")
     }
 }

@@ -96,7 +96,7 @@ extension ArenaViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: chatacterCellID, for: indexPath) as? ArenaTableViewCell
-        cell?.characterImage.image = characters[indexPath.row].image != nil ? characters[indexPath.row].image : UIImage(named: "default_character_image")
+        cell?.characterImage.image = characters[indexPath.row].image != nil ? UIImage(data: characters[indexPath.row].image!) : UIImage(named: "default_character_image")
         cell?.characterNameLabel.text = characters[indexPath.row].name.uppercased()
         cell?.selectionStyle = .none
         return cell!
@@ -133,10 +133,10 @@ extension ArenaViewController: ArenaViewProtocol {
     func setPlayer(number: Int, with character: Character) {
         switch number {
         case 1:
-            playerOneImageView.image = character.image != nil ? character.image : UIImage(named: "default_character_image")
+            playerOneImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
             playerOneNameLabel.text = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
         default:
-            playerTwoImageView.image = character.image != nil ? character.image : UIImage(named: "default_character_image")
+            playerTwoImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
             playerTwoNameLabel.text = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
         }
     }

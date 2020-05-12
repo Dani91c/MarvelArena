@@ -83,7 +83,7 @@ extension SearchCharacterViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: chatacterCellID, for: indexPath) as? CharacterTableViewCell
-        cell?.characterImage.image = characters[indexPath.row].image != nil ? characters[indexPath.row].image : UIImage(named: "default_character_image")
+        cell?.characterImage.image = characters[indexPath.row].image != nil ? UIImage(data: characters[indexPath.row].image!) : UIImage(named: "default_character_image")
         cell?.characterNameLabel.text = characters[indexPath.row].name.uppercased()
         cell?.selectionStyle = .none
         return cell!

@@ -8,12 +8,19 @@
 
 // MARK: Wireframe
 protocol RankingRouterProtocol: class {
+    func navigateToPreviousViewController()
+    func showshowCharacterDetailViewController(of character: Character)
 }
 
 // MARK: Presenter
 protocol RankingPresenterProtocol: class {
+    func viewDidLoad()
+    func backButtonClicked()
+    func characterClicked(at index: Int)
 }
 
 // MARK: View
 protocol RankingViewProtocol: class {
+    func setRanking(_ characters: [Character])
+    func setInformationLabel()
 }

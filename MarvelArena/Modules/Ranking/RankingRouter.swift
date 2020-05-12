@@ -31,5 +31,11 @@ class RankingRouter {
 
 // MARK: RankingRouter protocol
 extension RankingRouter: RankingRouterProtocol {
+    func navigateToPreviousViewController() {
+        mainRouter.showPreviousViewController(animated: true)
+    }
+    
+    func showshowCharacterDetailViewController(of character: Character) {
+        mainRouter.showCharacterDetailViewController(of: character)
+    }
 }
-
