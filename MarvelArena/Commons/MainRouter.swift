@@ -71,6 +71,8 @@ extension MainRouter: MainRouterProtocol {
     }
     
     func showRankingViewController() {
+        let rankingViewController = RankingRouter.createModule(mainRouter: self)
+        push(viewController: rankingViewController, animated: true)
     }
 
     func showCharacterDetailViewController(of character: Character) {
