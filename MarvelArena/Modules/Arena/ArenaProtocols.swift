@@ -30,6 +30,6 @@ protocol ArenaViewProtocol: class {
     func enableFightButton(_ isEnable: Bool)
     func showLoading(_ isShown: Bool)
     func showError(_ error: String)
-    func showResult(winner: String)
+    func showResult(winner: Character)
     func resetScreen()
 }

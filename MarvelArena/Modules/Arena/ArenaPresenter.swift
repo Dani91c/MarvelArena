@@ -54,7 +54,7 @@ extension ArenaPresenter: ArenaPresenterProtocol {
     
     func fightButtonClicked() {
         
-        let winner = playerOneCharacter!.power > playerTwoCharacter!.power ? playerOneCharacter!.name : playerTwoCharacter!.name
+        let winner = playerOneCharacter!.power > playerTwoCharacter!.power ? playerOneCharacter! : playerTwoCharacter!
         view?.showResult(winner: winner)
     }
     

@@ -26,6 +26,7 @@ class ArenaViewController: BaseViewController {
     
     var presenter: ArenaPresenterProtocol?
     
+    var resultAlertView: ResultAlertView?
     var characters: [Character] = []
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
@@ -146,13 +147,11 @@ extension ArenaViewController: ArenaViewProtocol {
         fightButton.alpha = isEnable ? 1 : 0.5
     }
     
-    func showResult(winner: String) {
-        let alert = UIAlertController(title: "Alert", message: "The winner is: \n \(winner)", preferredStyle: UIAlertController.Style.alert)
-        let fight = UIAlertAction(title: "Another Fight", style: .default) { (_ action) in self.presenter?.resetButtonClicked() }
-        let ranking = UIAlertAction(title: "Ranking", style: .default) { (_ action) in self.presenter?.rankingButtonClicked() }
-        alert.addAction(fight)
-        alert.addAction(ranking)
-        self.present(alert, animated: true, completion: nil)
+    func showResult(winner: Character) {
+        
+        resultAlertView = ResultAlertView(with: winner)
+        resultAlertView?.delegate = self
+        resultAlertView?.show(in: self.view)
     }
     
     func resetScreen() {
@@ -164,3 +163,16 @@ extension ArenaViewController: ArenaViewProtocol {
         enableFightButton(false)
     }
 }
+  
+// MARK: ResultAlertView Delegate
+extension ArenaViewController: ResultAlertViewDelegate {
+    func fightAgainButtonPressed(view: ResultAlertView) {
+        presenter?.resetButtonClicked()
+        resultAlertView = nil
+    }
+    
+    func rankingButtonPressed(view: ResultAlertView) {
+        self.presenter?.rankingButtonClicked()
+        resultAlertView = nil
+    }
+  }

@@ -26,6 +26,11 @@
 //MARK: Character Detail Module
 "characterDetail.descriptionNotAvailable" = "Description of this superhero is not available";
 
+//MARK: Result Alert View
+"ResultAlertView.title" = "The winner is:";
+"ResultAlertView.fightAgainButton" = "Fight again";
+"ResultAlertView.rankingButton" = "Ranking";
+
 //MARK: Ranking Module
 "ranking.titleLabel" = "Ranking";
 "ranking.informationLabel" = "There are no results to show.";
