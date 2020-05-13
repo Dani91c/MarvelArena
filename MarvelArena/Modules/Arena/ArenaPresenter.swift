@@ -22,6 +22,13 @@ class ArenaPresenter {
         self.interactor = interactor
         self.router = router
     }
+    
+    private func resetScreen() {
+        characters = []
+        playerOneCharacter = nil
+        playerTwoCharacter = nil
+        view?.resetScreen()
+    }
 }
 
 // MARK: ArenaPresenter protocol
@@ -59,16 +66,13 @@ extension ArenaPresenter: ArenaPresenterProtocol {
     }
     
     func resetButtonClicked() {
-        characters = []
-        playerOneCharacter = nil
-        playerTwoCharacter = nil
-        view?.resetScreen()
+        resetScreen()
     }
     
     func rankingButtonClicked() {
         UserDefaultsManager.addToCharacterRanking([playerOneCharacter!, playerTwoCharacter!])
         router.showRankingViewController()
-        view?.resetScreen()
+        resetScreen()
     }
 }
 
