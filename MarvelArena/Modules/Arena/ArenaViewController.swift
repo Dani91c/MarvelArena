@@ -13,6 +13,7 @@ class ArenaViewController: BaseViewController {
     
     let chatacterCellID = "ArenaTableViewCell"
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var informationLabel: UILabel!
@@ -77,6 +78,7 @@ class ArenaViewController: BaseViewController {
     
     private func setTextInLanguage() {
         
+        titleLabel.text = NSLocalizedString("arena.titleLabel", comment: "").uppercased()
         informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
     }
 }
@@ -156,9 +158,9 @@ extension ArenaViewController: ArenaViewProtocol {
     
     func resetScreen() {
         errorButtonTouchUpInside()
-        playerOneNameLabel.text = "Player 1"
+        playerOneNameLabel.text = NSLocalizedString("arena.playerOne", comment: "")
         playerOneImageView.image = UIImage(named: "default_character_image")
-        playerTwoNameLabel.text = "Player 2"
+        playerTwoNameLabel.text = NSLocalizedString("arena.playerTwo", comment: "")
         playerTwoImageView.image = UIImage(named: "default_character_image")
         enableFightButton(false)
     }
