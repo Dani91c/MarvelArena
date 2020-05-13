@@ -1,19 +1,65 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Marvel.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uKu-qD-oRa" userLabel="Background ImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_image" translatesAutoresizingMaskIntoConstraints="NO" id="aka-P7-39m" userLabel="splash_image">
+                                <rect key="frame" x="0.0" y="248.33333333333331" width="375" height="588.66666666666674"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aka-P7-39m" secondAttribute="height" multiplier="207:325" id="3Vg-QD-s6A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARVEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK4-wl-U2f">
+                                <rect key="frame" x="20" y="113" width="335" height="80"/>
+                                <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARENA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDK-VP-HNt">
+                                <rect key="frame" x="20" y="193" width="335" height="60"/>
+                                <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hK4-wl-U2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="0ja-ex-L7z"/>
+                            <constraint firstItem="YDK-VP-HNt" firstAttribute="trailing" secondItem="hK4-wl-U2f" secondAttribute="trailing" id="3hU-yo-Wlf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hK4-wl-U2f" secondAttribute="trailing" constant="20" id="6lR-Fm-rer"/>
+                            <constraint firstItem="YDK-VP-HNt" firstAttribute="leading" secondItem="hK4-wl-U2f" secondAttribute="leading" id="7U0-Dv-wgR"/>
+                            <constraint firstItem="uKu-qD-oRa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="De8-rs-r7k"/>
+                            <constraint firstItem="YDK-VP-HNt" firstAttribute="top" secondItem="hK4-wl-U2f" secondAttribute="bottom" id="Q3b-ll-5G1"/>
+                            <constraint firstItem="YDK-VP-HNt" firstAttribute="leading" secondItem="hK4-wl-U2f" secondAttribute="leading" id="RA8-dt-kL2"/>
+                            <constraint firstAttribute="bottom" secondItem="aka-P7-39m" secondAttribute="bottom" constant="-25" id="Rb8-Np-YSt"/>
+                            <constraint firstItem="hK4-wl-U2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SWv-Zb-nFu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aka-P7-39m" secondAttribute="trailing" id="bbQ-yy-5Q7"/>
+                            <constraint firstAttribute="bottom" secondItem="uKu-qD-oRa" secondAttribute="bottom" id="fMr-5C-aAY"/>
+                            <constraint firstItem="aka-P7-39m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="giU-K7-1ZN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uKu-qD-oRa" secondAttribute="trailing" id="uca-P0-gVZ"/>
+                            <constraint firstItem="YDK-VP-HNt" firstAttribute="top" secondItem="hK4-wl-U2f" secondAttribute="bottom" id="zWY-mT-Oq9"/>
+                            <constraint firstItem="uKu-qD-oRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zte-Gd-m46"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +68,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="728" height="546"/>
+        <image name="splash_image" width="1126" height="1600"/>
+    </resources>
 </document>

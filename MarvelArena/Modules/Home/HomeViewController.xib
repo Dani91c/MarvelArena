@@ -28,22 +28,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARVEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-OW-EYV">
-                    <rect key="frame" x="20" y="94" width="374" height="70"/>
-                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="70"/>
+                    <rect key="frame" x="20" y="113" width="374" height="80"/>
+                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="80"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARENA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lug-62-wDi">
-                    <rect key="frame" x="20" y="164" width="374" height="55"/>
-                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="55"/>
+                    <rect key="frame" x="20" y="193" width="374" height="60"/>
+                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="60"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgq-8T-ykZ">
-                    <rect key="frame" x="0.0" y="219" width="414" height="643"/>
+                    <rect key="frame" x="0.0" y="253" width="414" height="609"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlA-OF-W4M">
-                            <rect key="frame" x="0.0" y="95" width="414" height="260"/>
+                            <rect key="frame" x="0.0" y="83" width="414" height="260"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wac-Fr-0nn">
                                     <rect key="frame" x="50" y="0.0" width="314" height="60"/>
@@ -134,7 +134,7 @@
                 <constraint firstItem="lug-62-wDi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hfX-xX-8d0"/>
                 <constraint firstItem="lug-62-wDi" firstAttribute="top" secondItem="Auu-OW-EYV" secondAttribute="bottom" id="qdw-2v-jea"/>
                 <constraint firstItem="Fgq-8T-ykZ" firstAttribute="leading" secondItem="3Du-M4-pIU" secondAttribute="leading" id="u1i-qd-TTO"/>
-                <constraint firstItem="Auu-OW-EYV" firstAttribute="top" secondItem="3Du-M4-pIU" secondAttribute="top" constant="50" id="wh6-1K-b3f"/>
+                <constraint firstItem="Auu-OW-EYV" firstAttribute="top" secondItem="3Du-M4-pIU" secondAttribute="top" constant="69" id="wh6-1K-b3f"/>
                 <constraint firstItem="Auu-OW-EYV" firstAttribute="leading" secondItem="3Du-M4-pIU" secondAttribute="leading" constant="20" id="zcy-HM-Ama"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="3Du-M4-pIU"/>
