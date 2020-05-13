@@ -17,6 +17,7 @@
                 <outlet property="informationLabel" destination="OQ4-9S-Yln" id="p6E-zX-rUI"/>
                 <outlet property="searchBar" destination="wWt-NF-Gae" id="piC-TR-YTW"/>
                 <outlet property="tableView" destination="6V9-b3-kaI" id="3NK-AG-kR1"/>
+                <outlet property="titleLable" destination="AHX-RS-KHb" id="wiB-LQ-3ME"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Kbb-oK-COD"/>
             </connections>
         </placeholder>

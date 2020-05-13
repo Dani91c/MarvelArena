@@ -13,6 +13,7 @@ class SearchCharacterViewController: BaseViewController {
     
     let chatacterCellID = "CharacterTableViewCell"
     
+    @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var informationLabel: UILabel!
@@ -63,6 +64,7 @@ class SearchCharacterViewController: BaseViewController {
     
     private func setTextInLanguage() {
         
+        titleLable.text = NSLocalizedString("searchCharacter.titleLabel", comment: "").uppercased()
         informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
     }
 }

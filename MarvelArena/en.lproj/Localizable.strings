@@ -14,11 +14,12 @@
 //MARK: Home Module
 "home.fistTitleLabel" = "Marvel";
 "home.secondTitleLabel" = "Arena";
-"home.searchCharacterButton" = "Search character";
+"home.searchCharacterButton" = "Search";
 "home.arenaButton" = "Arena";
 "home.rankingButton" = "Ranking";
 
 //MARK: Search Character Module
+"searchCharacter.titleLabel" = "Search";
 "searchCharacter.informationLabel" = "Insert the name of the character you want to search or select the dice for random characters.";
 "searchCharacter.noResultsError" = "No results with the specified name.";
 
