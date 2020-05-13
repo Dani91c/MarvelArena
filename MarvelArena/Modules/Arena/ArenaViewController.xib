@@ -22,6 +22,7 @@
                 <outlet property="playerTwoNameLabel" destination="Q9r-3N-Dkv" id="dSQ-dy-oR1"/>
                 <outlet property="searchBar" destination="REK-9a-Vt9" id="RHd-hT-vCX"/>
                 <outlet property="tableView" destination="DYO-Ux-DwA" id="Ge3-pk-X2y"/>
+                <outlet property="titleLabel" destination="sXw-ty-qhA" id="07x-0H-P3I"/>
                 <outlet property="view" destination="Y3J-PK-UD6" id="oYc-bU-29S"/>
             </connections>
         </placeholder>
@@ -77,9 +78,10 @@
                         <constraint firstItem="sXw-ty-qhA" firstAttribute="leading" secondItem="1m1-uP-IPF" secondAttribute="trailing" constant="10" id="rxb-fv-Fme"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DYO-Ux-DwA">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DYO-Ux-DwA">
                     <rect key="frame" x="0.0" y="156" width="414" height="424"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <color key="separatorColor" red="0.1540529491" green="0.16484728430000001" blue="0.19108420500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2E-Ru-Y49" userLabel="SearchView">
                     <rect key="frame" x="0.0" y="100" width="414" height="56"/>

@@ -111,7 +111,7 @@ extension ArenaViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
 }
 
@@ -134,13 +134,17 @@ extension ArenaViewController: ArenaViewProtocol {
     }
     
     func setPlayer(number: Int, with character: Character) {
+        
+        let playerImage = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
+        let playerName = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
+        
         switch number {
         case 1:
-            playerOneImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
-            playerOneNameLabel.text = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
+            playerOneImageView.image = playerImage
+            playerOneNameLabel.text = playerName
         default:
-            playerTwoImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
-            playerTwoNameLabel.text = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
+            playerTwoImageView.image = playerImage
+            playerTwoNameLabel.text = playerName
         }
     }
     
