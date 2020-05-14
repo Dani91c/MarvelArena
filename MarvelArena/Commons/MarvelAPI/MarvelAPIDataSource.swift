@@ -8,7 +8,12 @@
 
 import Alamofire
 
-typealias Handler = (Bool, Data?, String?) -> Void
+enum Error {
+    case rerverError
+    case noInternet
+}
+
+typealias Handler = (Bool, Data?, Error?) -> Void
 
 // MARK: MarvelAPIDataSource
 class MarvelAPIDataSource {
@@ -22,9 +27,9 @@ class MarvelAPIDataSource {
                     handle(true, data, nil)
                 case .failure:
                     if response.response != nil {
-                        handle(false, nil, NSLocalizedString("general.serviceError", comment: ""))
+                        handle(false, nil, .rerverError)
                     } else {
-                        handle(false, nil, NSLocalizedString("general.conectivityError", comment: ""))
+                        handle(false, nil, .noInternet)
                     }
                 }
         }
@@ -51,7 +56,7 @@ extension MarvelAPIDataSource: MarvelAPIDataSourceProtocol {
         if let imageUrl = URL(string: url.replacingOccurrences(of: "http", with: "https")), let data = try? Data(contentsOf: imageUrl) {
             handle(true, data, nil)
         } else {
-            handle(false, nil, NSLocalizedString("general.serviceError", comment: ""))
+            handle(false, nil, .noInternet)
         }
     }
 }

@@ -8,7 +8,7 @@
 
 // MARK: GENERAL
 "general.okButton" = "Ok";
-"general.serviceError" = "It’s not possible to access the requested information. Please try again later";
+"general.rerverError" = "It’s not possible to access the requested information. Please try again later";
 "general.conectivityError" = "Unable to connect, please check your internet connection";
 
 //MARK: Home Module

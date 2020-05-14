@@ -52,7 +52,7 @@ extension ArenaPresenter: ArenaPresenterProtocol {
         if playerOneCharacter == nil {
             playerOneCharacter = characters![index]
             view?.setPlayer(number: 1, with: playerOneCharacter!)
-        } else if playerTwoCharacter == nil {
+        } else if playerTwoCharacter == nil && characters![index].name != playerOneCharacter!.name {
             playerTwoCharacter = characters![index]
             view?.setPlayer(number: 2, with: playerTwoCharacter!)
             view?.enableFightButton(true)
@@ -85,7 +85,7 @@ extension ArenaPresenter: MarvelAPIInteractorOutputProtocol {
         view?.setCharacters(characters)
     }
     
-    func requestCharactersError(_ error: String) {
+    func requestCharactersError(_ error: Error) {
         view?.showLoading(false)
         view?.showError(error)
     }

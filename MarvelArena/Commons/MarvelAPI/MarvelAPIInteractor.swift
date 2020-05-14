@@ -47,7 +47,7 @@ extension MarvelAPIInteractor: MarvelAPIInteractorInputProtocol {
                     }
                     self.presenter?.foundCharacters(characters)
                 } catch {
-                    self.presenter?.requestCharactersError(NSLocalizedString("general.serviceError", comment: ""))
+                    self.presenter?.requestCharactersError(.rerverError)
                 }
             } else {
                 self.presenter?.requestCharactersError(error!)
