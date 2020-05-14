@@ -38,4 +38,4 @@
 
 //MARK: Ranking Module
 "ranking.titleLabel" = "Ranking";
-"ranking.informationLabel" = "There are no results to show.";
+"ranking.informationLabel" = "There are no results to show.\nCharacters who fight in Arena section will appear here";
