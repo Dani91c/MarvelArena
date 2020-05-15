@@ -17,8 +17,15 @@ class BaseViewController: UIViewController {
         isShown ? showSpinner(onView: self.view) : removeSpinner()
     }
     
-    func showError(_ error: String) {
-        let alertMessage = error
+    func showError(_ error: Error) {
+        let alertMessage: String
+        
+        switch error {
+        case .rerverError:
+            alertMessage = NSLocalizedString("general.rerverError", comment: "")
+        case .noInternet:
+            alertMessage = NSLocalizedString("general.conectivityError", comment: "")
+        }
         let okButtonText = NSLocalizedString("general.okButton", comment: "")
         
         let alertController = UIAlertController(title: "", message: alertMessage, preferredStyle: .alert)

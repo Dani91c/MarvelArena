@@ -13,6 +13,7 @@ class ArenaViewController: BaseViewController {
     
     let chatacterCellID = "ArenaTableViewCell"
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var informationLabel: UILabel!
@@ -26,6 +27,7 @@ class ArenaViewController: BaseViewController {
     
     var presenter: ArenaPresenterProtocol?
     
+    var resultAlertView: ResultAlertView?
     var characters: [Character] = []
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
@@ -76,6 +78,7 @@ class ArenaViewController: BaseViewController {
     
     private func setTextInLanguage() {
         
+        titleLabel.text = NSLocalizedString("arena.titleLabel", comment: "").uppercased()
         informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
     }
 }
@@ -108,7 +111,7 @@ extension ArenaViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
 }
 
@@ -131,13 +134,17 @@ extension ArenaViewController: ArenaViewProtocol {
     }
     
     func setPlayer(number: Int, with character: Character) {
+        
+        let playerImage = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
+        let playerName = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
+        
         switch number {
         case 1:
-            playerOneImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
-            playerOneNameLabel.text = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
+            playerOneImageView.image = playerImage
+            playerOneNameLabel.text = playerName
         default:
-            playerTwoImageView.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
-            playerTwoNameLabel.text = character.name.uppercased().replacingOccurrences(of: "\\s?\\([\\w\\s]*\\)", with: "", options: .regularExpression)
+            playerTwoImageView.image = playerImage
+            playerTwoNameLabel.text = playerName
         }
     }
     
@@ -146,21 +153,32 @@ extension ArenaViewController: ArenaViewProtocol {
         fightButton.alpha = isEnable ? 1 : 0.5
     }
     
-    func showResult(winner: String) {
-        let alert = UIAlertController(title: "Alert", message: "The winner is: \n \(winner)", preferredStyle: UIAlertController.Style.alert)
-        let fight = UIAlertAction(title: "Another Fight", style: .default) { (_ action) in self.presenter?.resetButtonClicked() }
-        let ranking = UIAlertAction(title: "Ranking", style: .default) { (_ action) in self.presenter?.rankingButtonClicked() }
-        alert.addAction(fight)
-        alert.addAction(ranking)
-        self.present(alert, animated: true, completion: nil)
+    func showResult(winner: Character) {
+        
+        resultAlertView = ResultAlertView(with: winner)
+        resultAlertView?.delegate = self
+        resultAlertView?.show(in: self.view)
     }
     
     func resetScreen() {
         errorButtonTouchUpInside()
-        playerOneNameLabel.text = "Player 1"
+        playerOneNameLabel.text = NSLocalizedString("arena.playerOne", comment: "")
         playerOneImageView.image = UIImage(named: "default_character_image")
-        playerTwoNameLabel.text = "Player 2"
+        playerTwoNameLabel.text = NSLocalizedString("arena.playerTwo", comment: "")
         playerTwoImageView.image = UIImage(named: "default_character_image")
         enableFightButton(false)
     }
 }
+  
+// MARK: ResultAlertView Delegate
+extension ArenaViewController: ResultAlertViewDelegate {
+    func fightAgainButtonPressed(view: ResultAlertView) {
+        presenter?.resetButtonClicked()
+        resultAlertView = nil
+    }
+    
+    func rankingButtonPressed(view: ResultAlertView) {
+        self.presenter?.rankingButtonClicked()
+        resultAlertView = nil
+    }
+  }

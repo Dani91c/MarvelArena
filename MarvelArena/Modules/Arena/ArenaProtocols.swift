@@ -29,7 +29,7 @@ protocol ArenaViewProtocol: class {
     func setPlayer(number: Int, with character: Character)
     func enableFightButton(_ isEnable: Bool)
     func showLoading(_ isShown: Bool)
-    func showError(_ error: String)
-    func showResult(winner: String)
+    func showError(_ error: Error)
+    func showResult(winner: Character)
     func resetScreen()
 }

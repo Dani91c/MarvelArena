@@ -16,22 +16,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="317" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7Q-xv-5LS">
-                        <rect key="frame" x="20" y="26.5" width="14" height="27"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p7Q-xv-5LS">
+                        <rect key="frame" x="15" y="26.5" width="35" height="27"/>
                         <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="29"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8j-1X-cCe" userLabel="SeparatorView">
-                        <rect key="frame" x="54" y="5" width="1" height="70"/>
+                        <rect key="frame" x="65" y="5" width="1" height="70"/>
                         <color key="backgroundColor" red="0.48488616940000001" green="0.13001981379999999" blue="0.1215508357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="MbI-ge-i0J"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-BV-tzg">
-                        <rect key="frame" x="70" y="31" width="39" height="18.5"/>
-                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-BV-tzg">
+                        <rect key="frame" x="81" y="29" width="47" height="22"/>
+                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="24"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -45,6 +45,7 @@
                 <color key="backgroundColor" red="0.1540529491" green="0.16484728430000001" blue="0.19108420500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="Op3-iv-blF" secondAttribute="bottom" id="9x2-SB-asE"/>
+                    <constraint firstItem="g8j-1X-cCe" firstAttribute="leading" secondItem="p7Q-xv-5LS" secondAttribute="trailing" constant="15" id="BJV-yn-KI7"/>
                     <constraint firstItem="i9j-BV-tzg" firstAttribute="leading" secondItem="g8j-1X-cCe" secondAttribute="trailing" constant="15" id="JpZ-vZ-zoc"/>
                     <constraint firstAttribute="bottom" secondItem="g8j-1X-cCe" secondAttribute="bottom" constant="5" id="Q32-GV-24w"/>
                     <constraint firstItem="p7Q-xv-5LS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Q9l-ny-Yvn"/>
@@ -52,9 +53,9 @@
                     <constraint firstItem="i9j-BV-tzg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bNa-ha-jYA"/>
                     <constraint firstAttribute="trailing" secondItem="Op3-iv-blF" secondAttribute="trailing" id="mAW-RM-JfW"/>
                     <constraint firstItem="Op3-iv-blF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i9j-BV-tzg" secondAttribute="trailing" constant="15" id="pIp-bN-LwM"/>
-                    <constraint firstItem="g8j-1X-cCe" firstAttribute="leading" secondItem="p7Q-xv-5LS" secondAttribute="trailing" constant="20" id="svM-A1-wo4"/>
+                    <constraint firstItem="g8j-1X-cCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="65" id="svM-A1-wo4"/>
                     <constraint firstItem="g8j-1X-cCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tah-7O-v6B"/>
-                    <constraint firstItem="p7Q-xv-5LS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="x24-H3-nPE"/>
+                    <constraint firstItem="p7Q-xv-5LS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="x24-H3-nPE"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

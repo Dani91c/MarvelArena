@@ -8,23 +8,34 @@
 
 // MARK: GENERAL
 "general.okButton" = "Ok";
-"general.serviceError" = "It’s not possible to access the requested information. Please try again later";
+"general.rerverError" = "It’s not possible to access the requested information. Please try again later";
 "general.conectivityError" = "Unable to connect, please check your internet connection";
 
 //MARK: Home Module
 "home.fistTitleLabel" = "Marvel";
 "home.secondTitleLabel" = "Arena";
-"home.searchCharacterButton" = "Search character";
+"home.searchCharacterButton" = "Search";
 "home.arenaButton" = "Arena";
 "home.rankingButton" = "Ranking";
 
 //MARK: Search Character Module
+"searchCharacter.titleLabel" = "Search";
 "searchCharacter.informationLabel" = "Insert the name of the character you want to search or select the dice for random characters.";
 "searchCharacter.noResultsError" = "No results with the specified name.";
 
 //MARK: Character Detail Module
 "characterDetail.descriptionNotAvailable" = "Description of this superhero is not available";
 
+//MARK: Arena Module
+"arena.titleLabel" = "Arena";
+"arena.playerOne" = "Player 1";
+"arena.playerTwo" = "Player 2";
+
+//MARK: Result Alert View
+"ResultAlertView.title" = "The winner is:";
+"ResultAlertView.fightAgainButton" = "Fight again";
+"ResultAlertView.rankingButton" = "Ranking";
+
 //MARK: Ranking Module
 "ranking.titleLabel" = "Ranking";
-"ranking.informationLabel" = "There are no results to show.";
+"ranking.informationLabel" = "There are no results to show.\nCharacters who fight in Arena section will appear here";

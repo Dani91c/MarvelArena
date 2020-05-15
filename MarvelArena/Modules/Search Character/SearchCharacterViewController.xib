@@ -17,6 +17,7 @@
                 <outlet property="informationLabel" destination="OQ4-9S-Yln" id="p6E-zX-rUI"/>
                 <outlet property="searchBar" destination="wWt-NF-Gae" id="piC-TR-YTW"/>
                 <outlet property="tableView" destination="6V9-b3-kaI" id="3NK-AG-kR1"/>
+                <outlet property="titleLable" destination="AHX-RS-KHb" id="wiB-LQ-3ME"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Kbb-oK-COD"/>
             </connections>
         </placeholder>
@@ -72,7 +73,7 @@
                         <constraint firstItem="NIy-n6-aPj" firstAttribute="centerY" secondItem="AHX-RS-KHb" secondAttribute="centerY" constant="-4" id="xnA-Mu-Lgg"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-b3-kaI">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-b3-kaI">
                     <rect key="frame" x="0.0" y="156" width="414" height="740"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                 </tableView>

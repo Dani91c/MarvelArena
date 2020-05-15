@@ -20,5 +20,5 @@ protocol MarvelAPIInteractorInputProtocol: class {
 // MARK: InteractorOutput
 protocol MarvelAPIInteractorOutputProtocol: class {
     func foundCharacters(_ characters: [Character])
-    func requestCharactersError(_ error: String)
+    func requestCharactersError(_ error: Error)
 }

@@ -22,6 +22,13 @@ class ArenaPresenter {
         self.interactor = interactor
         self.router = router
     }
+    
+    private func resetScreen() {
+        characters = []
+        playerOneCharacter = nil
+        playerTwoCharacter = nil
+        view?.resetScreen()
+    }
 }
 
 // MARK: ArenaPresenter protocol
@@ -45,7 +52,7 @@ extension ArenaPresenter: ArenaPresenterProtocol {
         if playerOneCharacter == nil {
             playerOneCharacter = characters![index]
             view?.setPlayer(number: 1, with: playerOneCharacter!)
-        } else if playerTwoCharacter == nil {
+        } else if playerTwoCharacter == nil && characters![index].name != playerOneCharacter!.name {
             playerTwoCharacter = characters![index]
             view?.setPlayer(number: 2, with: playerTwoCharacter!)
             view?.enableFightButton(true)
@@ -54,21 +61,18 @@ extension ArenaPresenter: ArenaPresenterProtocol {
     
     func fightButtonClicked() {
         
-        let winner = playerOneCharacter!.power > playerTwoCharacter!.power ? playerOneCharacter!.name : playerTwoCharacter!.name
+        let winner = playerOneCharacter!.power > playerTwoCharacter!.power ? playerOneCharacter! : playerTwoCharacter!
         view?.showResult(winner: winner)
     }
     
     func resetButtonClicked() {
-        characters = []
-        playerOneCharacter = nil
-        playerTwoCharacter = nil
-        view?.resetScreen()
+        resetScreen()
     }
     
     func rankingButtonClicked() {
         UserDefaultsManager.addToCharacterRanking([playerOneCharacter!, playerTwoCharacter!])
         router.showRankingViewController()
-        view?.resetScreen()
+        resetScreen()
     }
 }
 
@@ -81,7 +85,7 @@ extension ArenaPresenter: MarvelAPIInteractorOutputProtocol {
         view?.setCharacters(characters)
     }
     
-    func requestCharactersError(_ error: String) {
+    func requestCharactersError(_ error: Error) {
         view?.showLoading(false)
         view?.showError(error)
     }

@@ -8,23 +8,28 @@
 
 import Alamofire
 
-typealias Handler = (Bool, Data?, String?) -> Void
+enum Error {
+    case rerverError
+    case noInternet
+}
+
+typealias Handler = (Bool, Data?, Error?) -> Void
 
 // MARK: MarvelAPIDataSource
 class MarvelAPIDataSource {
     
-    private func makePetition(with url: String, handle: @escaping Handler) {
-                
-        AF.request(url)
+    private func makePetition(with url: String, and parameters: [String: Any], handle: @escaping Handler) {
+            
+        AF.request(url, method: .get, parameters: parameters)
             .responseData { response in
                 switch response.result {
                 case .success(let data):
                     handle(true, data, nil)
                 case .failure:
                     if response.response != nil {
-                        handle(false, nil, NSLocalizedString("general.serviceError", comment: ""))
+                        handle(false, nil, .rerverError)
                     } else {
-                        handle(false, nil, NSLocalizedString("general.conectivityError", comment: ""))
+                        handle(false, nil, .noInternet)
                     }
                 }
         }
@@ -33,17 +38,25 @@ class MarvelAPIDataSource {
 
 extension MarvelAPIDataSource: MarvelAPIDataSourceProtocol {
     func requestCharacters(with name: String?, handle: @escaping Handler) {
+    
+        let url = Constants.Urls.MarvelAPI.baseUrl + Constants.Urls.MarvelAPI.Endpoints.characters
         
-        let endpoint = name != nil ? "\(Constants.Url.MarvelAPI.Endpoints.character)\(name!)&" : Constants.Url.MarvelAPI.Endpoints.characters
-        let url = Constants.Url.MarvelAPI.baseUrl + endpoint + Constants.Url.MarvelAPI.ts + Constants.Url.MarvelAPI.apiKey + Constants.Url.MarvelAPI.hash
-        makePetition(with: url, handle: handle)
+        var parameters: [String: Any] = [
+            "ts": Constants.Urls.MarvelAPI.ts,
+            "apikey": Constants.Urls.MarvelAPI.apiKey,
+            "hash": Constants.Urls.MarvelAPI.hash,
+            "limit": Constants.Urls.MarvelAPI.limit
+        ]
+        name != nil ? parameters["nameStartsWith"] = name : nil
+    
+        makePetition(with: url, and: parameters, handle: handle)
     }
 
     func downloadImageData(from url: String, handle: @escaping Handler) {
         if let imageUrl = URL(string: url.replacingOccurrences(of: "http", with: "https")), let data = try? Data(contentsOf: imageUrl) {
             handle(true, data, nil)
         } else {
-            handle(false, nil, NSLocalizedString("general.serviceError", comment: ""))
+            handle(false, nil, .noInternet)
         }
     }
 }
