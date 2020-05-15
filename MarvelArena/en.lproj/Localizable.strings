@@ -20,7 +20,7 @@
 
 //MARK: Search Character Module
 "searchCharacter.titleLabel" = "Search";
-"searchCharacter.informationLabel" = "Insert the name of the character you want to search or select the dice for random characters.";
+"searchCharacter.informationLabel" = "Insert the name of the character you want to search or press the dice for random characters.";
 "searchCharacter.noResultsError" = "No results with the specified name.";
 
 //MARK: Character Detail Module
@@ -28,8 +28,10 @@
 
 //MARK: Arena Module
 "arena.titleLabel" = "Arena";
-"arena.playerOne" = "Player 1";
-"arena.playerTwo" = "Player 2";
+"arena.informationLabel" = "Insert the name of the character you want to search or press the dice for random characters.\n\nPick two characters and press fight button to battle them.";
+"arena.playerOneLabel" = "Player 1";
+"arena.playerTwoLabel" = "Player 2";
+"arena.fightButtonLabel" = "Fight";
 
 //MARK: Result Alert View
 "ResultAlertView.title" = "The winner is:";

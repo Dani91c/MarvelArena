@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Marvel.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultAlertView" customModule="MarvelArena" customModuleProvider="target">
             <connections>
@@ -33,30 +38,30 @@
                     <blurEffect style="dark"/>
                 </visualEffectView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NE4-DB-3K0">
-                    <rect key="frame" x="25" y="202.66666666666666" width="325" height="406.66666666666674"/>
+                    <rect key="frame" x="35" y="211" width="305" height="390"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The winner is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LcU-h6-9M6">
-                            <rect key="frame" x="20" y="30" width="285" height="31.666666666666671"/>
-                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="34"/>
+                            <rect key="frame" x="20" y="30.000000000000004" width="265" height="38.333333333333343"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-Td-cx0">
-                            <rect key="frame" x="20" y="297.66666666666663" width="285" height="23"/>
-                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-Td-cx0">
+                            <rect key="frame" x="20" y="279" width="265" height="25"/>
+                            <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="25"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuD-ZA-euf" userLabel="Buttons View">
-                            <rect key="frame" x="0.0" y="350.66666666666674" width="325" height="56"/>
+                            <rect key="frame" x="0.0" y="334" width="305" height="56"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYi-tB-uFR" userLabel="Accept Button View">
-                                    <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="56"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="56"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fD-GN-UKY">
-                                            <rect key="frame" x="2" y="0.0" width="159.66666666666666" height="54"/>
+                                            <rect key="frame" x="2" y="0.0" width="149.66666666666666" height="54"/>
                                             <color key="backgroundColor" red="0.38551856770422532" green="0.072010464969999993" blue="0.077986009420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                             <state key="normal" title="Fight again">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -75,19 +80,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tg-6Z-vlT" userLabel="SeparatorView">
-                                    <rect key="frame" x="161.66666666666666" y="0.0" width="2" height="56"/>
+                                    <rect key="frame" x="151.66666666666666" y="0.0" width="2" height="56"/>
                                     <color key="backgroundColor" red="0.86274509799999999" green="0.89411764709999997" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="2" id="u0z-7N-bQ0"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBY-LA-bMH" userLabel="Cancel Button View">
-                                    <rect key="frame" x="163.66666666666663" y="0.0" width="161.33333333333337" height="56"/>
+                                    <rect key="frame" x="153.66666666666663" y="0.0" width="151.33333333333337" height="56"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7d-Ff-Kqf" userLabel="Cancel Button">
-                                            <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="54"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="149.33333333333334" height="54"/>
                                             <color key="backgroundColor" red="0.38571112932394364" green="0.072010464969999993" blue="0.077986009420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                             <state key="normal" title="Ranking">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -123,7 +128,7 @@
                             </constraints>
                         </view>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HLS-JZ-9jJ" userLabel="Character Image">
-                            <rect key="frame" x="70" y="91.666666666666657" width="185" height="190.99999999999997"/>
+                            <rect key="frame" x="70" y="93.3333333333333" width="165" height="170.66666666666663"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="HLS-JZ-9jJ" secondAttribute="height" multiplier="92:95" id="CFh-6E-kdo"/>
                             </constraints>
@@ -131,7 +136,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.47239136700000001" green="0.072010464969999993" blue="0.077986009420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="HLS-JZ-9jJ" firstAttribute="top" secondItem="LcU-h6-9M6" secondAttribute="bottom" constant="30" id="2aa-AU-51a"/>
+                        <constraint firstItem="HLS-JZ-9jJ" firstAttribute="top" secondItem="LcU-h6-9M6" secondAttribute="bottom" constant="25" id="2aa-AU-51a"/>
                         <constraint firstItem="NuD-ZA-euf" firstAttribute="top" secondItem="7TO-Td-cx0" secondAttribute="bottom" constant="30" id="7Pt-p5-y7V"/>
                         <constraint firstItem="HLS-JZ-9jJ" firstAttribute="leading" secondItem="NE4-DB-3K0" secondAttribute="leading" constant="70" id="Avb-wn-V2T"/>
                         <constraint firstItem="7TO-Td-cx0" firstAttribute="leading" secondItem="NE4-DB-3K0" secondAttribute="leading" constant="20" id="KvB-XO-Kr3"/>
@@ -153,8 +158,8 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="m9Z-nG-FNY" firstAttribute="trailing" secondItem="PrZ-aO-k35" secondAttribute="trailing" id="4Ny-LC-apc"/>
-                <constraint firstItem="NE4-DB-3K0" firstAttribute="leading" secondItem="m9Z-nG-FNY" secondAttribute="leading" constant="25" id="60L-QC-Sep"/>
-                <constraint firstItem="m9Z-nG-FNY" firstAttribute="trailing" secondItem="NE4-DB-3K0" secondAttribute="trailing" constant="25" id="NxX-VW-mDy"/>
+                <constraint firstItem="NE4-DB-3K0" firstAttribute="leading" secondItem="m9Z-nG-FNY" secondAttribute="leading" constant="35" id="60L-QC-Sep"/>
+                <constraint firstItem="m9Z-nG-FNY" firstAttribute="trailing" secondItem="NE4-DB-3K0" secondAttribute="trailing" constant="35" id="NxX-VW-mDy"/>
                 <constraint firstItem="PrZ-aO-k35" firstAttribute="leading" secondItem="m9Z-nG-FNY" secondAttribute="leading" id="auR-sj-VRX"/>
                 <constraint firstItem="NE4-DB-3K0" firstAttribute="centerY" secondItem="fdM-Oe-TPk" secondAttribute="centerY" id="omi-T3-Ot3"/>
                 <constraint firstAttribute="bottom" secondItem="PrZ-aO-k35" secondAttribute="bottom" id="qZM-7Z-8JK"/>

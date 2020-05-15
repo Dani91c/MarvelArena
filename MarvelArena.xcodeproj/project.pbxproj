@@ -54,7 +54,6 @@
 		0180D82A246C720100B2F6B2 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180D829246C720100B2F6B2 /* Modal.swift */; };
 		01D53BBC24661385004980E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBB24661385004980E9 /* AppDelegate.swift */; };
 		01D53BBE24661385004980E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBD24661385004980E9 /* SceneDelegate.swift */; };
-		01D53BC024661385004980E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BBF24661385004980E9 /* ViewController.swift */; };
 		01D53BC524661386004980E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC424661386004980E9 /* Assets.xcassets */; };
 		01D53BC824661386004980E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D53BC624661386004980E9 /* LaunchScreen.storyboard */; };
 		01D53BD324661386004980E9 /* MarvelArenaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D53BD224661386004980E9 /* MarvelArenaTests.swift */; };
@@ -131,7 +130,6 @@
 		01D53BB824661385004980E9 /* MarvelArena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelArena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D53BBB24661385004980E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01D53BBD24661385004980E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01D53BBF24661385004980E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01D53BC424661386004980E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D53BC724661386004980E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01D53BC924661386004980E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -387,7 +385,6 @@
 			children = (
 				01D53BBB24661385004980E9 /* AppDelegate.swift */,
 				01D53BBD24661385004980E9 /* SceneDelegate.swift */,
-				01D53BBF24661385004980E9 /* ViewController.swift */,
 				01D53BC424661386004980E9 /* Assets.xcassets */,
 				01D53BC624661386004980E9 /* LaunchScreen.storyboard */,
 				01D53BC924661386004980E9 /* Info.plist */,
@@ -712,7 +709,6 @@
 				0180D822246B3FBF00B2F6B2 /* RankingTableViewCell.swift in Sources */,
 				010DBEF42468589E000F2DF9 /* CharacterDetailRouter.swift in Sources */,
 				01192BAC24671DDA009E4E1D /* Constants.swift in Sources */,
-				01D53BC024661385004980E9 /* ViewController.swift in Sources */,
 				01192B9F2466FA47009E4E1D /* SearchCharacterRouter.swift in Sources */,
 				0180D814246B118D00B2F6B2 /* RankingProtocols.swift in Sources */,
 				010DBEFF2468655E000F2DF9 /* BaseViewController.swift in Sources */,

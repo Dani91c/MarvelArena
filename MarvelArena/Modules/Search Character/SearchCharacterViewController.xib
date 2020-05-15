@@ -94,7 +94,7 @@
                         <constraint firstItem="wWt-NF-Gae" firstAttribute="leading" secondItem="jKV-ft-Qet" secondAttribute="leading" id="pI5-fm-Rqa"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-9S-Yln" userLabel="Information Label">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-9S-Yln" userLabel="Information Label">
                     <rect key="frame" x="30" y="206" width="354" height="0.0"/>
                     <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
