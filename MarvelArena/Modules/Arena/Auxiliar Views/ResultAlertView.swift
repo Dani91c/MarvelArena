@@ -51,7 +51,7 @@ class ResultAlertView: UIView, Modal {
         contentView.frame = self.bounds
         
         characterImage.image = character.image != nil ? UIImage(data: character.image!) : UIImage(named: "default_character_image")
-        characterNameLabel.text = character.name
+        characterNameLabel.text = character.name.uppercased()
     }
     
     private func setTextInLanguage() {

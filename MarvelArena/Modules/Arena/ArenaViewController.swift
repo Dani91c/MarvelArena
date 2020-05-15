@@ -49,7 +49,8 @@ class ArenaViewController: BaseViewController {
         tableView.reloadData()
         tableView.isHidden = true
         informationLabel.isHidden = false
-        informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
+        informationLabel.text = NSLocalizedString("arena.informationLabel", comment: "")
+        searchBar.text = ""
     }
     
     override func viewDidLoad() {
@@ -79,7 +80,10 @@ class ArenaViewController: BaseViewController {
     private func setTextInLanguage() {
         
         titleLabel.text = NSLocalizedString("arena.titleLabel", comment: "").uppercased()
-        informationLabel.text = NSLocalizedString("searchCharacter.informationLabel", comment: "")
+        informationLabel.text = NSLocalizedString("arena.informationLabel", comment: "")
+        playerOneNameLabel.text = NSLocalizedString("arena.playerOneLabel", comment: "")
+        playerTwoNameLabel.text = NSLocalizedString("arena.playerTwoLabel", comment: "")
+        fightButton.setTitle(NSLocalizedString("arena.fightButtonLabel", comment: ""), for: .normal)
     }
 }
 
@@ -162,9 +166,9 @@ extension ArenaViewController: ArenaViewProtocol {
     
     func resetScreen() {
         errorButtonTouchUpInside()
-        playerOneNameLabel.text = NSLocalizedString("arena.playerOne", comment: "")
+        playerOneNameLabel.text = NSLocalizedString("arena.playerOneLabel", comment: "")
         playerOneImageView.image = UIImage(named: "default_character_image")
-        playerTwoNameLabel.text = NSLocalizedString("arena.playerTwo", comment: "")
+        playerTwoNameLabel.text = NSLocalizedString("arena.playerTwoLabel", comment: "")
         playerTwoImageView.image = UIImage(named: "default_character_image")
         enableFightButton(false)
     }
