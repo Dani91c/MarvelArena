@@ -31,7 +31,7 @@ extension MarvelAPIInteractor: MarvelAPIInteractorInputProtocol {
                         
                         var image: Data?
                         let imageUrl = "\(character.thumbnail.path).\(character.thumbnail.thumbnailExtension)"
-                        if !imageUrl.contains("image_not_available") {
+                        if !imageUrl.contains(Constants.imageNotAvailable) {
                             self.dataSource?.downloadImageData(from: imageUrl, handle: { (isSuccess, imageData, _) in
                                 if isSuccess {
                                     image = imageData!

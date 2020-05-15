@@ -8,7 +8,7 @@
 
 import Foundation
 
-//MARK: Constants
+// MARK: Constants
 struct Constants {
     struct Urls {
         struct MarvelAPI {
@@ -24,4 +24,6 @@ struct Constants {
             }
         }
     }
+    
+    static let imageNotAvailable = "image_not_available"
 }
